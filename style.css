@@ -1,0 +1,414 @@
+/* ===================== RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: #222;
+  background: #f8f9fa;
+  line-height: 1.5;
+}
+
+/* ===================== TIPOGRAFÍA ===================== */
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+p {
+  color: #444;
+}
+
+/* ===================== TOPBAR ===================== */
+.topbar {
+  background: #c8102e;
+  color: white;
+  font-size: 0.9rem;
+}
+.topbar .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar .left span {
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+.topbar i {
+  margin-right: 6px;
+  color: white;
+}
+.topbar .right {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ===================== HEADER ===================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent; /* solo transparente */
+  border-bottom: none;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.header-flex {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px 20px; /* más espacio arriba/abajo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo img {
+  height: 115px; /* un poco más grande */
+  max-height: 130px;
+  position: relative;
+  top: 10px; /* lo baja un poco */
+  z-index: 1100;
+  transition: transform 0.3s ease, height 0.3s ease;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* NAV */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #c8102e;
+  transition: width 0.3s ease;
+}
+nav ul li a:hover {
+  color: #c8102e;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.btn-border {
+  border: 2px solid #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  color: #fff !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-border:hover {
+  background: #c8102e;
+  border-color: #c8102e;
+  color: #fff !important;
+  box-shadow: 0 4px 10px rgba(200,16,46,0.3);
+}
+
+/* HEADER al hacer scroll */
+.site-header.scrolled {
+  background: #fff;
+  border-bottom: 2px solid #c8102e;
+}
+.site-header.scrolled nav ul li a {
+  color: #444;
+}
+.site-header.scrolled .btn-border {
+  border-color: #c8102e;
+  color: #c8102e !important;
+}
+.site-header.scrolled .btn-border:hover {
+  background: #c8102e;
+  color: #fff !important;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  background: url("img/familia.jpg") center/cover no-repeat;
+  height: 75vh; /* un poco más pequeño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero-content p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.btn-hero {
+  display: inline-block;
+  background: #c8102e;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn-hero:hover {
+  background: #900c1a;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===================== PRESENTACIÓN ===================== */
+.presentacion {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.presentacion p {
+  font-size: 1.5rem;
+}
+.resaltado {
+  color: #c8102e;
+  font-weight: bold;
+}
+
+/* ===================== SERVICIOS ===================== */
+.servicios {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #c8102e;
+}
+.servicios .intro {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #666;
+}
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-12px);
+  border-color: #c8102e;
+}
+.card h5 {
+  color: #222;
+  font-weight: 700;
+}
+
+/* ===================== CARRUSEL ===================== */
+.carousel {
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 6s ease;
+}
+.carousel-item.active img {
+  transform: scale(1.05);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c8102e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: #900c1a;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+}
+.carousel-indicators .active {
+  background: #c8102e;
+}
+
+/* ===================== CONTACTO ===================== */
+.contacto {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #c8102e;
+}
+.contacto p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #666;
+}
+.formulario {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formulario input,
+.formulario textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.formulario textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.formulario button {
+  background: #c8102e;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.formulario button:hover {
+  background: #900c1a;
+}
+
+/* ===================== BOTÓN WHATSAPP ===================== */
+.whatsapp-float {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+  filter: invert(1);
+}
+.whatsapp-float:hover {
+  transform: scale(1.1) rotate(8deg);
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 60px 20px 20px 20px;
+}
+.footerinf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.txif {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.ttredes {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.infcr a,
+.infdr a {
+  display: block;
+  font-size: 14px;
+  color: #2d0404;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.infcr a:hover, 
+.infdr a:hover {
+  color: #c8102e;
+}
+.lineafooter {
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: #999;
+}
+.lineafooter div { margin: 5px 0; }
+
+@media (min-width: 768px) {
+  .lineafooter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
