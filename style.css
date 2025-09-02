@@ -405,10 +405,150 @@ nav ul li a:hover::after {
   color: #999;
 }
 .lineafooter div { margin: 5px 0; }
+/* ===================== RESPONSIVE ===================== */
 
-@media (min-width: 768px) {
-  .lineafooter {
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 991px) {
+  /* Header */
+  .header-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .logo img {
+    height: 90px;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Servicios en 2 columnas */
+  .servicios .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  /* Topbar */
+  .topbar .container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  .topbar .left span {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  /* Header y menú */
+  .header-flex {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+  nav ul li a {
+    font-size: 0.95rem;
+    color: #222;
+  }
+  .btn-border {
+    padding: 6px 16px;
+    border-radius: 20px;
+  }
+
+  /* Hero */
+  .hero {
+    height: 75vh;
+  }
+  .hero .carousel-item img {
+    height: 75vh;
+  }
+  .hero-content {
+    padding: 10px;
+    width: 90%;
+  }
+  .hero-content h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  /* Presentación */
+  .presentacion p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  /* Servicios en 1 columna */
+  .servicios .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .card {
+    padding: 20px 15px;
+  }
+
+  /* Siniestro */
+  .siniestro {
+    padding: 50px 15px;
+  }
+  .siniestro h2 {
+    font-size: 1.4rem;
+  }
+  .siniestro p {
+    font-size: 0.95rem;
+    padding: 0 5px;
+  }
+
+  /* Formulario */
+  .formulario {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .formulario input,
+  .formulario textarea {
+    font-size: 0.95rem;
+  }
+  .formulario button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footerinf {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .lineafooter {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .txif {
+    font-size: 13px;
   }
 }
