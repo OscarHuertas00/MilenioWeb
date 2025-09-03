@@ -147,6 +147,40 @@ footer a:hover { color:#c8102e; }
 }
 .partner-logo:hover { opacity:1; }
 
+.footer-logo {
+  max-width: 120px; /* tamaño más pequeño */
+  height: auto;
+}
+
+.footer-logo + h2 {
+  font-size: 1.2rem; /* título más compacto */
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.social-links a:hover {
+  color: #dc3545; /* rojo corporativo */
+}
+
+.btn-maps {
+  display: inline-block;
+  background: #dc3545;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-maps:hover {
+  background: #b02a37;
+}
+
+
 /* ===================== WHATSAPP FLOAT ===================== */
 .whatsapp-float {
   position:fixed;
