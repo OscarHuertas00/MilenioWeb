@@ -1,0 +1,203 @@
+/* ===================== BASE ===================== */
+body { font-family: 'Lato', sans-serif; }
+
+/* ===================== TOPBAR ===================== */
+.topbar { 
+  background:#c8102e; 
+  color:white; 
+  font-size:0.9rem; 
+  padding:8px 0; 
+}
+.topbar span { margin-right:20px; }
+
+/* ===================== HEADER ===================== */
+header { 
+  background:white; 
+  box-shadow:0 2px 6px rgba(0,0,0,0.1); 
+}
+.logo img { 
+  max-height:120px; 
+  width:auto; 
+}
+
+/* ===================== NAV ===================== */
+.nav-links a {
+  color:#333;
+  margin:0 12px;
+  font-weight:500;
+  text-decoration:none;
+  padding:6px 12px;
+  border-radius:20px;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover {
+  background:#c8102e;
+  color:#fff;
+}
+.btn-ayuda {
+  border:1px solid #c8102e;
+  border-radius:30px;
+  padding:6px 18px;
+  color:#c8102e !important;
+  font-weight:600;
+}
+.btn-ayuda:hover {
+  background:#c8102e;
+  color:white !important;
+}
+
+/* ===================== HERO ===================== */
+.hero { 
+  position:relative; 
+  height:55vh; 
+  overflow:hidden; 
+}
+.hero img { 
+  width:100%; 
+  height:100%; 
+  object-fit:cover; 
+  filter:brightness(0.7); 
+}
+.hero .overlay { 
+  position:absolute; 
+  inset:0; 
+  background:rgba(0,0,0,0.4); 
+}
+.hero-content { 
+  position:absolute; 
+  top:50%; 
+  left:50%; 
+  transform:translate(-50%,-50%); 
+  color:white; 
+  text-align:center; 
+}
+.hero-content h1 { 
+  font-size:2.5rem; 
+  font-weight:700; 
+}
+.btn-hero { 
+  display:inline-block; 
+  margin-top:15px; 
+  background:#c8102e; 
+  color:white; 
+  padding:12px 28px; 
+  border-radius:30px; 
+  font-weight:600; 
+  text-decoration:none; 
+}
+.btn-hero:hover { 
+  background:#a50d23; 
+}
+
+/* ===================== INTRO ===================== */
+.intro { 
+  padding:60px 20px; 
+  background:#f8f9fa; 
+  text-align:center; 
+}
+.intro h3 { font-size:1.6rem; }
+.highlight { color:#c8102e; font-weight:bold; }
+
+/* ===================== SERVICIOS ===================== */
+.card { 
+  border:0; 
+  border-radius:16px; 
+  overflow:hidden; 
+  box-shadow:0 4px 10px rgba(0,0,0,0.1); 
+  transition:transform .3s; 
+}
+.card:hover { transform:translateY(-5px); }
+.card img { height:200px; object-fit:cover; }
+
+/* ===================== SINIESTRO ===================== */
+.siniestro { 
+  background:url('img/') center/cover no-repeat; 
+  position:relative; 
+}
+.siniestro::before { 
+  content:""; 
+  position:absolute; 
+  inset:0; 
+  background:rgba(0,0,0,0.6); 
+}
+.siniestro .container { 
+  position:relative; 
+  z-index:2; 
+}
+.siniestro h2 { font-weight:700; }
+
+/* ===================== FOOTER ===================== */
+footer { 
+  background:#222; 
+  color:#ccc; 
+}
+footer h2 { 
+  font-size:1.2rem; 
+  color:white; 
+}
+footer a { 
+  color:#ccc; 
+  text-decoration:none; 
+}
+footer a:hover { color:#c8102e; }
+.partner-logo { 
+  max-height:50px; 
+  opacity:.8; 
+  transition:.3s; 
+}
+.partner-logo:hover { opacity:1; }
+
+/* ===================== WHATSAPP FLOAT ===================== */
+.whatsapp-float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  border-radius:50%;
+  width:65px;
+  height:65px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+  transition:transform .3s ease;
+  z-index:1000;
+  animation:bounce 3s infinite;
+}
+.whatsapp-float:hover { transform:scale(1.1); }
+.whatsapp-float img { width:35px; height:35px; }
+@keyframes bounce {
+  0%, 100% { transform:translateY(0); }
+  50% { transform:translateY(-5px); }
+}
+
+/* ===================== ASEGURADORAS ===================== */
+.aseguradoras {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.aseguradoras h2 {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logos-grid img {
+  max-height: 80px;   /* todas del mismo alto */
+  width: auto;        /* mantiene proporción */
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logos-grid img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

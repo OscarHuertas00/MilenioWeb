@@ -1,0 +1,128 @@
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 991px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .logo img {
+    height: 90px;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .servicios .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .topbar .container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  .topbar .left span {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .header-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+  nav ul li a {
+    font-size: 0.95rem;
+    color: #222;
+  }
+  .btn-border {
+    padding: 6px 16px;
+    border-radius: 20px;
+  }
+  .logo img {
+    height: 70px;
+  }
+  .hero {
+    height: 75vh;
+  }
+  .hero .carousel-item img {
+    height: 75vh;
+  }
+  .hero-content {
+    padding: 10px;
+    width: 90%;
+  }
+  .hero-content h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+  .presentacion p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+  .servicios .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .card {
+    padding: 20px 15px;
+  }
+  .siniestro {
+    padding: 50px 15px;
+  }
+  .siniestro h2 {
+    font-size: 1.4rem;
+  }
+  .siniestro p {
+    font-size: 0.95rem;
+    padding: 0 5px;
+  }
+  .formulario {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .formulario input,
+  .formulario textarea {
+    font-size: 0.95rem;
+  }
+  .formulario button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .footerinf {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .lineafooter {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .txif {
+    font-size: 13px;
+  }
+}

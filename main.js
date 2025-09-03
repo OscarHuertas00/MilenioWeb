@@ -2,7 +2,6 @@ let slides = document.querySelectorAll(".slide");
 let index = 0;
 let interval;
 
-// Función para mostrar un slide con animación
 function showSlide(i) {
   slides.forEach((slide, idx) => {
     slide.classList.remove("active", "fade-in", "fade-out");
@@ -39,11 +38,8 @@ function stopAutoPlay() {
   clearInterval(interval);
 }
 
-// Iniciar autoplay
 startAutoPlay();
 
-// Pausar cuando el mouse entra
+// Pausar en hover
 document.querySelector(".carousel-container").addEventListener("mouseenter", stopAutoPlay);
-
-// Reanudar cuando el mouse sale
 document.querySelector(".carousel-container").addEventListener("mouseleave", startAutoPlay);
