@@ -1,0 +1,216 @@
+/* =========================
+   RESET & VARIABLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #b90e2b;
+  --color-secundario: #8a0a20;
+  --color-texto: #222;
+  --color-fondo: #f9f9f9;
+  --color-blanco: #fff;
+  --color-gris: #666;
+  --fuente: 'Arial', sans-serif;
+}
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+body {
+  font-family: var(--fuente);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  color: var(--color-texto);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-principal);
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--color-secundario);
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background: var(--color-principal);
+  padding: 1rem 2rem;
+  color: var(--color-blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1, header img {
+  margin: 0;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: var(--color-blanco);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Menú hamburguesa (Responsive) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--color-blanco);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--color-principal);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 0 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* =========================
+   BOTONES
+========================= */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  background: var(--color-principal);
+  color: var(--color-blanco);
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-secundario);
+}
+
+/* Botón transparente */
+.btn-transparente {
+  background: transparent;
+  border: 2px solid var(--color-principal);
+  color: var(--color-principal);
+}
+
+.btn-transparente:hover {
+  background: var(--color-principal);
+  color: var(--color-blanco);
+}
+
+/* =========================
+   FORMULARIOS
+========================= */
+form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: var(--color-principal);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+footer .logo-footer {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   UTILIDADES
+========================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* HERO CONTACTO DIFERENTE */
+.hero-contacto {
+  background: linear-gradient(135deg, #b30000, #ff4d4d);
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 60px 20px;
+}
+
+.hero-contacto h1,
+.hero-contacto p {
+  color: #fff;
+}
+
+.hero-contacto .contact-icon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-contacto .contact-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
