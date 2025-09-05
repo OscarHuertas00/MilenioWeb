@@ -194,9 +194,10 @@ header {
 
 /* ===================== SINIESTRO ===================== */
 .siniestro { 
-  background:url('style.css') center/cover no-repeat; 
-  position:relative; 
+  background: url('../img/Sample7.webp') center/cover no-repeat; 
+  position: relative; 
 }
+
 .siniestro::before { 
   content:""; 
   position:absolute; 
