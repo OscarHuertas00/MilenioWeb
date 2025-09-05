@@ -1,70 +1,137 @@
-/* ===== MENÚ DESKTOP ===== */
-.nav-menu {
-  display: flex;
-  gap: 20px;
-}
+/* ===================== RESPONSIVE ===================== */
 
-.nav-menu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/* Móvil grande / tablets (≤991px) */
+@media (max-width: 991px) {
+  /* Menú hamburguesa */
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 2001;
+  }
 
-.nav-menu ul li {
-  margin: 0 10px;
-}
-
-.nav-menu ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
-
-/* ===== BOTÓN HAMBURGUESA ===== */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* ===== MENÚ MÓVIL ===== */
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none; /* Ocultar menú por defecto */
+  nav.nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background: #111; /* Fondo negro opaco */
     flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: left 0.4s ease-in-out;
+    z-index: 2000;
+  }
+
+  nav.nav-links a {
+    display: block;
+    margin: 15px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff; /* Enlaces blancos */
+  }
+
+  nav.nav-links a.btn-ayuda {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 26px;
+    border-radius: 30px;
+  }
+
+  nav.nav-links.active {
     left: 0;
-    width: 100%;
-    padding: 15px 0;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    z-index: 1000;
   }
 
-  .nav-menu.active {
-    display: flex; /* Mostrar cuando esté activo */
+  /* Hero */
+  .hero {
+    height: 70vh;
   }
 
-  .nav-menu ul {
-    flex-direction: column;
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-hero {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Cards servicios */
+  .swiper-slide .card {
+    margin: 0 auto;
+  }
+
+  .btn-card {
+    font-size: 0.95rem;
+    padding: 8px 18px;
+  }
+
+  /* Logos aseguradoras */
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+}
 
-  .nav-menu ul li a {
-    color: #c1121f; /* Rojo institucional */
-    font-size: 18px;
+/* Tablets pequeñas / móviles medianos (≤768px) */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
   }
 
-  .menu-toggle {
-    display: block; /* Mostrar botón hamburguesa en móviles */
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1100;
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .btn-hero {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  .logos-grid {
+    grid-template-columns: 2fr;
+  }
+}
+
+/* Móviles pequeños (≤576px) */
+@media (max-width: 576px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn-hero {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar span {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  footer .col-md-4 {
+    text-align: center;
+  }
+
+  footer .social-links {
+    justify-content: center;
   }
 }

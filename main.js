@@ -1,3 +1,4 @@
+// ==================== CARRUSEL ====================
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 let interval;
@@ -45,14 +46,14 @@ document.querySelector(".carousel-container").addEventListener("mouseenter", sto
 document.querySelector(".carousel-container").addEventListener("mouseleave", startAutoPlay);
 
 
-
-
-
+// ==================== MENÚ HAMBURGUESA ====================
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".nav-menu");
+  const navMenu = document.querySelector(".nav-links");
 
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
 });

@@ -20,11 +20,10 @@
   <!-- AOS Animaciones -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Tus estilos -->
   <link rel="stylesheet" href="Css/style.css">
   <link rel="stylesheet" href="Css/Responsive.css">
-    <button class="menu-toggle" aria-label="Abrir menú">
-    ☰
-  </button>
+  
 
 </head>
 <body>
@@ -41,16 +40,23 @@
   <!-- HEADER -->
   <header class="site-header py-2" data-aos="fade-down">
     <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Logo -->
       <div class="logo">
         <img src="img/Logos/milenio.png" alt="Milenio Seguros">
       </div>
-      <nav class="d-none d-md-flex nav-links">
+
+      <!-- Botón hamburguesa (solo visible en móvil) -->
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+      <!-- Menú -->
+      <nav class="nav-links">
         <a href="#">Inicio</a>
-        <a href="">Seguros</a>
+        <a href="#servicios">Seguros</a>
         <a href="#">Empresas</a>
         <a href="#">Aseguradoras</a>
         <a href="#">Nuestra Empresa</a>
-        <a href="Contacto.html">Contacto</a>
+        <a href="#contacto">Contacto</a>
         <a href="#" class="btn-ayuda">¿Ayuda?</a>
       </nav>
     </div>
@@ -78,98 +84,97 @@
   </section>
 
   <!-- SERVICIOS -->
-<section id="servicios" class="py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-3" data-aos="fade-up">Nuestros Servicios</h2>
-    <p class="text-muted mb-4" data-aos="fade-up" data-aos-delay="200">
-      Soluciones a tu medida para personas, familias y empresas.
-    </p>
+  <section id="servicios" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3" data-aos="fade-up">Nuestros Servicios</h2>
+      <p class="text-muted mb-4" data-aos="fade-up" data-aos-delay="200">
+        Soluciones a tu medida para personas, familias y empresas.
+      </p>
 
-    <div class="swiper serviciosSwiper" data-aos="fade-up" data-aos-delay="400">
-      <div class="swiper-wrapper">
+      <div class="swiper serviciosSwiper" data-aos="fade-up" data-aos-delay="400">
+        <div class="swiper-wrapper">
 
-        <!-- Card 1 -->
-        <div class="swiper-slide">
-          <div class="card">
-            <img src="img/Sample5.webp" alt="Seguro Automotriz">
-            <div class="card-body">
-              <h5 class="fw-bold">Seguro Automotriz</h5>
-              <p class="text-muted">Protege tu vehículo contra accidentes e imprevistos.</p>
-              <a href="#" class="btn-card">Ver más</a>
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="img/Sample5.webp" alt="Seguro Automotriz">
+              <div class="card-body">
+                <h5 class="fw-bold">Seguro Automotriz</h5>
+                <p class="text-muted">Protege tu vehículo contra accidentes e imprevistos.</p>
+                <a href="#" class="btn-card">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="swiper-slide">
-          <div class="card">
-            <img src="img/Sample6.webp" alt="Seguro SOAT">
-            <div class="card-body">
-              <h5 class="fw-bold">Seguro SOAT</h5>
-              <p class="text-muted">Obligatorio y con atención inmediata en accidentes.</p>
-              <a href="#" class="btn-card">Ver más</a>
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="img/Sample6.webp" alt="Seguro SOAT">
+              <div class="card-body">
+                <h5 class="fw-bold">Seguro SOAT</h5>
+                <p class="text-muted">Obligatorio y con atención inmediata en accidentes.</p>
+                <a href="#" class="btn-card">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="swiper-slide">
-          <div class="card">
-            <img src="img/Sample7.webp" alt="ARL">
-            <div class="card-body">
-              <h5 class="fw-bold">ARL</h5>
-              <p class="text-muted">Cobertura laboral para tus empleados.</p>
-              <a href="#" class="btn-card">Ver más</a>
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="img/Sample7.webp" alt="ARL">
+              <div class="card-body">
+                <h5 class="fw-bold">ARL</h5>
+                <p class="text-muted">Cobertura laboral para tus empleados.</p>
+                <a href="#" class="btn-card">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 4 -->
-        <div class="swiper-slide">
-          <div class="card">
-            <img src="img/Sample8.webp" alt="Seguro de Vida">
-            <div class="card-body">
-              <h5 class="fw-bold">Seguro de Vida</h5>
-              <p class="text-muted">Protege a tu familia con la mejor cobertura.</p>
-              <a href="#" class="btn-card">Ver más</a>
+          <!-- Card 4 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="img/Sample8.webp" alt="Seguro de Vida">
+              <div class="card-body">
+                <h5 class="fw-bold">Seguro de Vida</h5>
+                <p class="text-muted">Protege a tu familia con la mejor cobertura.</p>
+                <a href="#" class="btn-card">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 5 -->
-        <div class="swiper-slide">
-          <div class="card">
-            <img src="img/Sample6.webp" alt="Seguro de Salud">
-            <div class="card-body">
-              <h5 class="fw-bold">Seguro de Salud</h5>
-              <p class="text-muted">Atención médica inmediata y especializada.</p>
-              <a href="#" class="btn-card">Ver más</a>
+          <!-- Card 5 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="img/Sample6.webp" alt="Seguro de Salud">
+              <div class="card-body">
+                <h5 class="fw-bold">Seguro de Salud</h5>
+                <p class="text-muted">Atención médica inmediata y especializada.</p>
+                <a href="#" class="btn-card">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 6 -->
-        <div class="swiper-slide">
-          <div class="card">
-            <img src="img/Sample5.webp" alt="Seguro Empresarial">
-            <div class="card-body">
-              <h5 class="fw-bold">Seguro Empresarial</h5>
-              <p class="text-muted">Cubre tu negocio frente a todo riesgo.</p>
-              <a href="#" class="btn-card">Ver más</a>
+          <!-- Card 6 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="img/Sample5.webp" alt="Seguro Empresarial">
+              <div class="card-body">
+                <h5 class="fw-bold">Seguro Empresarial</h5>
+                <p class="text-muted">Cubre tu negocio frente a todo riesgo.</p>
+                <a href="#" class="btn-card">Ver más</a>
+              </div>
             </div>
           </div>
+
         </div>
 
+        <!-- Paginación y botones de navegación -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-
-      <!-- Paginación y botones de navegación -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- SINIESTRO -->
   <section class="siniestro text-white text-center py-5" data-aos="zoom-in-up">
@@ -180,98 +185,92 @@
     </div>
   </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
 
-      <!-- FORMULARIO -->
-      <div class="col-md-6 mb-4" data-aos="fade-right">
-        <h2 class="text-danger">Contáctanos</h2>
-        <p>Déjanos tus datos y un asesor se comunicará contigo.</p>
-        <form>
-          <input type="text" class="form-control mb-3" placeholder="Tu Nombre" required>
-          <input type="email" class="form-control mb-3" placeholder="Tu Correo" required>
-          <input type="tel" class="form-control mb-3" placeholder="Tu Teléfono">
-          <textarea class="form-control mb-3" placeholder="Escribe tu mensaje..." required></textarea>
-          <button type="submit" class="btn btn-danger w-100">Enviar Mensaje</button>
-        </form>
-      </div>
-
-      <!-- ASEGURADORAS -->
-      <div class="col-md-6" data-aos="fade-left">
-        <h2 class="text-center mb-4">Aseguradoras aliadas</h2>
-        <div class="logos-grid">
-          <img src="img/Compañias_alidas/axa_colpatria.png" alt="AXA Colpatria">
-          <img src="img/Compañias_alidas/bolivar.png" alt="Seguros Bolívar">
-          <img src="img/Compañias_alidas/HDI.png" alt="HDI Seguros">
-          <img src="img/Compañias_alidas/MAPREE.png" alt="Mapfre">
-          <img src="img/Compañias_alidas/mundial.png" alt="Seguros Mundial">
-          <img src="img/Compañias_alidas/Positiva.png" alt="Positiva Seguros">
-          <img src="img/Compañias_alidas/Previstora.png" alt="Previsora Seguros">
-          <img src="img/Compañias_alidas/surapng.png" alt="Sura">
-          <img src="img/Compañias_alidas/solidaria2.png" alt="Solidaria">
-          <img src="img/Compañias_alidas/segurosdevidadelestado.png" alt="Seguros de Vida del Estado">
+        <!-- FORMULARIO -->
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <h2 class="text-danger">Contáctanos</h2>
+          <p>Déjanos tus datos y un asesor se comunicará contigo.</p>
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Tu Nombre" required>
+            <input type="email" class="form-control mb-3" placeholder="Tu Correo" required>
+            <input type="tel" class="form-control mb-3" placeholder="Tu Teléfono">
+            <textarea class="form-control mb-3" placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit" class="btn btn-danger w-100">Enviar Mensaje</button>
+          </form>
         </div>
-      </div>
 
-    </div>
-  </div>
-</section>
-
+        <!-- ASEGURADORAS -->
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="text-center mb-4">Aseguradoras aliadas</h2>
+          <div class="logos-grid">
+            <img src="img/Compañias_alidas/axa_colpatria.png" alt="AXA Colpatria">
+            <img src="img/Compañias_alidas/bolivar.png" alt="Seguros Bolívar">
+            <img src="img/Compañias_alidas/HDI.png" alt="HDI Seguros">
+            <img src="img/Compañias_alidas/MAPREE.png" alt="Mapfre">
+            <img src="img/Compañias_alidas/mundial.png" alt="Seguros Mundial">
+            <img src="img/Compañias_alidas/Positiva.png" alt="Positiva Seguros">
+            <img src="img/Compañias_alidas/Previstora.png" alt="Previsora Seguros">
+            <img src="img/Compañias_alidas/surapng.png" alt="Sura">
+            <img src="img/Compañias_alidas/solidaria2.png" alt="Solidaria">
+            <img src="img/Compañias_alidas/segurosdevidadelestado.png" alt="Seguros de Vida del Estado">
+          </div>
+        </div>
 
       </div>
     </div>
   </section>
 
-<footer class="py-4" data-aos="fade-up">
-  <div class="container d-flex flex-wrap justify-content-between">
-    
-    <!-- Columna 1: Logo + descripción -->
-    <div class="col-md-4 mb-3 text-center text-md-start">
-      <img src="img/Logos/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3">
-      <h2>MILENIO LTDA ASESORES DE SEGUROS</h2>
-      <p>Protegemos lo que más valoras. Nuestro compromiso es tu tranquilidad.</p>
-      <div class="social-links">
-        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-        <a href="#"><i class="ri-instagram-fill"></i></a>
-        <a href="#"><i class="ri-twitter-fill"></i></a>
+  <!-- FOOTER -->
+  <footer class="py-4" data-aos="fade-up">
+    <div class="container d-flex flex-wrap justify-content-between">
+      
+      <!-- Columna 1: Logo + descripción -->
+      <div class="col-md-4 mb-3 text-center text-md-start">
+        <img src="img/Logos/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3">
+        <h2>MILENIO LTDA ASESORES DE SEGUROS</h2>
+        <p>Protegemos lo que más valoras. Nuestro compromiso es tu tranquilidad.</p>
+        <div class="social-links">
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="col-md-4 mb-3">
+        <p class="fw-bold">Enlaces rápidos</p>
+        <a href="#">Inicio</a><br>
+        <a href="#">Sobre nosotros</a><br>
+        <a href="#">Servicios</a><br>
+        <a href="#">Contáctanos</a>
+      </div>
+
+      <!-- Columna 3: Contacto + Botón Google Maps -->
+      <div class="col-md-4 mb-3">
+        <p class="fw-bold">Contáctanos</p>
+        <p>Teléfono: +57 605 2823408</p>
+        <p>Correo: contacto@milenioseguros.com</p>
+        <p>Dirección: Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</p>
+
+        <!-- Botón Google Maps -->
+        <div class="mt-3">
+          <a href="https://www.google.com/maps?q=Cr17+24+-+39+Cl+Nariño+Sincelejo+Sucre" 
+             target="_blank" 
+             class="btn-maps">
+            <i class="ri-map-pin-2-fill"></i> Ver ubicación en Google Maps
+          </a>
+        </div>
       </div>
     </div>
 
-    <!-- Columna 2: Enlaces rápidos -->
-    <div class="col-md-4 mb-3">
-      <p class="fw-bold">Enlaces rápidos</p>
-      <a href="#">Inicio</a><br>
-      <a href="#">Sobre nosotros</a><br>
-      <a href="#">Servicios</a><br>
-      <a href="#">Contáctanos</a>
+    <div class="text-center border-top pt-3 mt-3">
+      <p class="mb-0">© 2025 Milenio Seguros. Todos los derechos reservados.</p>
     </div>
-
-    <!-- Columna 3: Contacto + Botón Google Maps -->
-    <div class="col-md-4 mb-3">
-      <p class="fw-bold">Contáctanos</p>
-      <p>Teléfono: +57 605 2823408</p>
-      <p>Correo: contacto@milenioseguros.com</p>
-      <p>Dirección: Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</p>
-
-      <!-- Botón Google Maps -->
-      <div class="mt-3">
-        <a href="https://www.google.com/maps?q=Cr17+24+-+39+Cl+Nariño+Sincelejo+Sucre" 
-           target="_blank" 
-           class="btn-maps">
-          <i class="ri-map-pin-2-fill"></i> Ver ubicación en Google Maps
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-center border-top pt-3 mt-3">
-    <p class="mb-0">© 2025 Milenio Seguros. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-
+  </footer>
 
   <!-- WhatsApp -->
   <a href="https://wa.me/3116166922?text=Hola,%20quiero%20más%20información%20sobre%20sus%20seguros"
@@ -297,5 +296,28 @@
       }
     });
   </script>
+
+  <script>
+    // Toggle menú hamburguesa
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Cierra menú al hacer clic en un enlace
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+
+
+
+
+
+
 </body>
 </html>

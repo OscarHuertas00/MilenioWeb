@@ -1,5 +1,10 @@
 /* ===================== BASE ===================== */
-body { font-family: 'Lato', sans-serif; }
+body { 
+  font-family: 'Lato', sans-serif; 
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
 
 /* ===================== TOPBAR ===================== */
 .topbar { 
@@ -14,13 +19,54 @@ body { font-family: 'Lato', sans-serif; }
 header { 
   background:white; 
   box-shadow:0 2px 6px rgba(0,0,0,0.1); 
+  position:relative;
+  z-index:1000;
 }
 .logo img { 
   max-height:120px; 
   width:auto; 
 }
 
+/* ===================== MENÚ HAMBURGUESA ===================== */
+.menu-toggle {
+  display: none; /* oculto en escritorio */
+  cursor: pointer;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 1002;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #c8102e;
+  margin: 6px auto;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* animación a “X” */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* ===================== NAV ===================== */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
 .nav-links a {
   color:#333;
   margin:0 12px;
@@ -99,31 +145,6 @@ header {
 .highlight { color:#c8102e; font-weight:bold; }
 
 /* ===================== SERVICIOS ===================== */
-/* ==== CARDS DE SERVICIOS ==== */
-/* ==== BOTÓN DE CADA CARD (TRANSPARENTE) ==== */
-.btn-card {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 20px;
-  background: transparent;
-  color: #b70000;
-  font-size: 14px;
-  font-weight: bold;
-  border: 2px solid #b70000;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-card:hover {
-  background: #b70000;
-  color: #fff;
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(183, 0, 0, 0.4);
-}
-
-
-/* ==== BOTÓN DE CADA CARD ==== */
 .btn-card {
   display: inline-block;
   margin-top: 12px;
@@ -137,7 +158,6 @@ header {
   box-shadow: 0 4px 10px rgba(183, 0, 0, 0.4);
   transition: all 0.3s ease;
 }
-
 .btn-card:hover {
   background: linear-gradient(135deg, #8c0000, #b70000);
   transform: scale(1.1);
@@ -156,26 +176,21 @@ header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
 }
-
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background: #8c0000;
   transform: scale(1.1);
 }
-
-/* ==== PAGINACIÓN ==== */
 .swiper-pagination-bullet {
   background: #b70000;
   opacity: 0.5;
   transition: all 0.3s ease;
 }
-
 .swiper-pagination-bullet-active {
   background: #8c0000;
   opacity: 1;
   transform: scale(1.2);
 }
-
 
 /* ===================== SINIESTRO ===================== */
 .siniestro { 
@@ -196,42 +211,52 @@ header {
 
 /* ===================== FOOTER ===================== */
 footer { 
-  background:#222; 
-  color:#ccc; 
+  background: #111;  /* fondo negro */
+  color: #fff;       /* texto blanco */
+  font-size: 0.9rem;
 }
+
 footer h2 { 
-  font-size:1.2rem; 
-  color:white; 
+  font-size: 1.2rem; 
+  color: #fff;       /* títulos en blanco */
 }
+
 footer a { 
-  color:#ccc; 
-  text-decoration:none; 
+  color: #fff;       /* enlaces en blanco */
+  text-decoration: none; 
 }
-footer a:hover { color:#c8102e; }
+
+footer a:hover { 
+  color: #dc3545;    /* rojo al pasar mouse */
+}
+
 .partner-logo { 
-  max-height:50px; 
-  opacity:.8; 
-  transition:.3s; 
+  max-height: 50px; 
+  opacity: 0.8; 
+  transition: 0.3s; 
 }
-.partner-logo:hover { opacity:1; }
+
+.partner-logo:hover { 
+  opacity: 1; 
+}
 
 .footer-logo {
-  max-width: 120px; /* tamaño más pequeño */
+  max-width: 120px; 
   height: auto;
 }
 
 .footer-logo + h2 {
-  font-size: 1.2rem; /* título más compacto */
+  font-size: 1.2rem; 
 }
 
 .social-links a {
   font-size: 1.5rem;
   margin-right: 10px;
-  color: #fff;
+  color: #fff;        /* iconos en blanco */
 }
 
 .social-links a:hover {
-  color: #dc3545; /* rojo corporativo */
+  color: #dc3545;     /* iconos rojos al hover */
 }
 
 .btn-maps {
@@ -278,12 +303,10 @@ footer a:hover { color:#c8102e; }
   padding: 60px 20px;
   background: #fff;
 }
-
 .aseguradoras h2 {
   font-weight: 700;
   margin-bottom: 40px;
 }
-
 .logos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -291,15 +314,14 @@ footer a:hover { color:#c8102e; }
   align-items: center;
   justify-items: center;
 }
-
 .logos-grid img {
-  max-height: 80px;   /* todas del mismo alto */
-  width: auto;        /* mantiene proporción */
+  max-height: 80px;   
+  width: auto;        
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
 .logos-grid img:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
+
