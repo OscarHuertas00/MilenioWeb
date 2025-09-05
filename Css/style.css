@@ -164,23 +164,13 @@ header {
   box-shadow: 0 6px 15px rgba(140, 0, 0, 0.5);
 }
 
-/* ==== CONTROLES DEL CARRUSEL ==== */
+/* ==== OCULTAR CONTROLES DEL CARRUSEL ==== */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #fff;
-  font-size: 18px;
-  width: 45px;
-  height: 45px;
-  background: rgba(183, 0, 0, 0.85);
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
+  display: none !important;
 }
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background: #8c0000;
-  transform: scale(1.1);
-}
+
+/* ==== PAGINACIÓN DEL CARRUSEL ==== */
 .swiper-pagination-bullet {
   background: #b70000;
   opacity: 0.5;
@@ -197,7 +187,6 @@ header {
   background: url('../img/Sample7.webp') center/cover no-repeat; 
   position: relative; 
 }
-
 .siniestro::before { 
   content:""; 
   position:absolute; 
@@ -212,54 +201,44 @@ header {
 
 /* ===================== FOOTER ===================== */
 footer { 
-  background: #111;  /* fondo negro */
-  color: #fff;       /* texto blanco */
+  background: #111;  
+  color: #fff;       
   font-size: 0.9rem;
 }
-
 footer h2 { 
   font-size: 1.2rem; 
-  color: #fff;       /* títulos en blanco */
+  color: #fff;       
 }
-
 footer a { 
-  color: #fff;       /* enlaces en blanco */
+  color: #fff;       
   text-decoration: none; 
 }
-
 footer a:hover { 
-  color: #dc3545;    /* rojo al pasar mouse */
+  color: #dc3545;    
 }
-
 .partner-logo { 
   max-height: 50px; 
   opacity: 0.8; 
   transition: 0.3s; 
 }
-
 .partner-logo:hover { 
   opacity: 1; 
 }
-
 .footer-logo {
   max-width: 120px; 
   height: auto;
 }
-
 .footer-logo + h2 {
   font-size: 1.2rem; 
 }
-
 .social-links a {
   font-size: 1.5rem;
   margin-right: 10px;
-  color: #fff;        /* iconos en blanco */
+  color: #fff;        
 }
-
 .social-links a:hover {
-  color: #dc3545;     /* iconos rojos al hover */
+  color: #dc3545;     
 }
-
 .btn-maps {
   display: inline-block;
   background: #dc3545;
@@ -269,11 +248,9 @@ footer a:hover {
   text-decoration: none;
   transition: background 0.3s;
 }
-
 .btn-maps:hover {
   background: #b02a37;
 }
-
 
 /* ===================== WHATSAPP FLOAT ===================== */
 .whatsapp-float {
@@ -326,3 +303,24 @@ footer a:hover {
   opacity: 0.9;
 }
 
+.aseguradorasSwiper {
+  padding: 40px 0;
+}
+
+.aseguradorasSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aseguradorasSwiper img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.aseguradorasSwiper img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
