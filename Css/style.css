@@ -21,6 +21,10 @@ header {
   box-shadow:0 2px 6px rgba(0,0,0,0.1); 
   position:relative;
   z-index:1000;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
 }
 .logo img { 
   max-height:120px; 
@@ -90,6 +94,36 @@ header {
 .btn-ayuda:hover {
   background:#c8102e;
   color:white !important;
+}
+
+/* ===================== RESPONSIVE NAV ===================== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-radius: 0 0 0 8px;
+    padding: 1rem;
+    z-index: 1001;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    color:#333;
+  }
 }
 
 /* ===================== HERO ===================== */

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Vida Docente | Milenio Seguros</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos Remix -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="Css/VidaDocente .css">
+</head>
+<body style="font-family:'Lato', sans-serif;">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header py-2 shadow-sm bg-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/Logos/milenio.png" alt="Milenio Seguros" style="height:50px;">
+      </div>
+
+      <!-- Botón menú hamburguesa -->
+      <button class="menu-toggle d-md-none" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Navegación -->
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="seguros.html">Seguros</a>
+        <a href="empresas.html">Empresas</a>
+        <a href="aseguradoras.html">Aseguradoras</a>
+        <a href="nuestra-empresa.html">Nuestra Empresa</a>
+        <a href="VidaDocente.html">Plan vida docente</a>
+        <a href="Contacto.html">Contacto</a>
+        <a href="Ayuda.html" class="btn-ayuda">¿Ayuda?</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero text-white d-flex align-items-center" 
+           style="background: linear-gradient(rgba(183,28,28,0.85), rgba(183,28,28,0.85)), 
+                  url('img/Sample7.webp') center/cover no-repeat; 
+                  min-height:90vh;">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- TEXTO -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="fw-bold display-4 mb-3">Plan Vida Docente</h1>
+          <div class="d-flex align-items-center mb-4">
+            <h3 class="fw-normal me-3">Protección para ti y tu familia</h3>
+            <img src="img/Compañias_alidas/surapng.png" alt="SURA" style="height:70px; max-width:150px;">
+          </div>
+
+          <p class="lead">
+            Un seguro <strong>diseñado especialmente para docentes</strong>, con respaldo inmediato, beneficios únicos y la confianza de SURA.
+          </p>
+
+          <!-- Botones -->
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#formulario" class="btn btn-light btn-lg px-4">Cotiza tu plan</a>
+            <a href="https://wa.me/3116166922?text=Hola,%20quiero%20más%20información" target="_blank" 
+               class="btn btn-outline-light btn-lg px-4">
+              <i class="ri-whatsapp-line me-2"></i>Hablar por WhatsApp
+            </a>
+          </div>
+
+          <p class="small mt-3">Más de <strong>500 familias docentes</strong> ya confían en este plan.</p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="col-lg-5 offset-lg-1" id="formulario">
+          <div class="formulario bg-white p-5 rounded shadow-lg">
+            <h3 class="mb-4 text-center text-dark">Solicita más información</h3>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Nombre completo*" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control form-control-lg" placeholder="Correo electrónico*" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control form-control-lg" placeholder="Teléfono*" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Ciudad*" required>
+              </div>
+              <div class="mb-3">
+                <select class="form-select form-select-lg" required>
+                  <option value="">Selecciona tu interés</option>
+                  <option value="vida">Seguro de Vida</option>
+                  <option value="salud">Seguro de Salud</option>
+                  <option value="otros">Otros</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-danger btn-lg w-100 mt-3">
+                Quiero más información
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFICIOS ===================== -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">¿Por qué elegir Plan Vida Docente?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <i class="ri-shield-check-line display-4 text-danger mb-3"></i>
+          <h5>Respaldo inmediato</h5>
+          <p>Tu familia recibe apoyo económico ágil en caso de eventualidad.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="ri-team-line display-4 text-danger mb-3"></i>
+          <h5>Protección familiar</h5>
+          <p>Cubre no solo al docente, también a su grupo familiar cercano.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="ri-book-marked-line display-4 text-danger mb-3"></i>
+          <h5>Bono educativo</h5>
+          <p>Apoyo económico para estudios de tus beneficiarios en caso de fallecimiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIALES ===================== -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Lo que hace único a Plan Vida Docente</h2>
+      <ul class="list-group list-group-flush shadow-sm">
+        <li class="list-group-item"><i class="ri-check-line text-success"></i> Cobertura desde los 14 hasta los 70 años.</li>
+        <li class="list-group-item"><i class="ri-check-line text-success"></i> Opciones adicionales: invalidez, hospitalización, enfermedades graves, auxilio funerario.</li>
+        <li class="list-group-item"><i class="ri-check-line text-success"></i> Respaldo económico rápido y confiable de SURA.</li>
+        <li class="list-group-item"><i class="ri-check-line text-success"></i> Bono educativo exclusivo para hijos beneficiarios.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIOS ===================== -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Lo que dicen otros docentes</h2>
+      <blockquote class="blockquote">
+        <p>“Con este plan tengo la tranquilidad de que, pase lo que pase, mi familia estará protegida.”</p>
+        <footer class="blockquote-footer">María López, docente afiliada</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="text-center py-5 bg-danger text-white">
+    <div class="container">
+      <h3 class="mb-3">¿Listo para proteger tu futuro y el de tu familia?</h3>
+      <a href="#formulario" class="btn btn-light btn-lg">Solicita tu cotización ahora</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container d-flex flex-wrap justify-content-between">
+      <div>
+        <img src="../Milenio/img/Logos/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3" style="height:50px;">
+        <p>MILENIO LTDA ASESORES DE SEGUROS</p>
+        <p>Protegemos lo que más valoras. Nuestro compromiso es tu tranquilidad.</p>
+      </div>
+      <div>
+        <p class="fw-bold">Contáctanos</p>
+        <p>Teléfono: +57 605 2823408</p>
+        <p>Correo: contacto@milenioseguros.com</p>
+        <p>Dirección: Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</p>
+      </div>
+    </div>
+    <div class="text-center border-top pt-3 mt-3">
+      <p class="mb-0">© 2025 Milenio Seguros. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("active");
+      nav.classList.toggle("active");
+      nav.classList.toggle("d-flex");
+    });
+  </script>
+</body>
+</html>

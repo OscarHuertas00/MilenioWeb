@@ -1,0 +1,176 @@
+/* ===================== BASE ===================== */
+body { 
+  font-family: 'Lato', sans-serif; 
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  color:#333;
+}
+a { text-decoration:none; }
+
+/* ===================== HEADER ===================== */
+.site-header {
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.logo img { 
+  height:100px !important;   /* logo más grande */
+  max-height:120px;          /* límite */
+  transition: transform 0.3s ease;
+}
+.logo img:hover { transform:scale(1.08); }
+
+/* ===================== NAV ===================== */
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.nav-links a {
+  color:#333;
+  font-weight:500;
+  padding:6px 12px;
+  border-radius:20px;
+  transition:all 0.3s ease;
+}
+.nav-links a:hover {
+  background:#b71c1c;
+  color:#fff;
+}
+.btn-ayuda {
+  border:1px solid #b71c1c;
+  border-radius:30px;
+  padding:6px 18px;
+  color:#b71c1c !important;
+  font-weight:600;
+}
+.btn-ayuda:hover {
+  background:#b71c1c;
+  color:#fff !important;
+}
+
+/* ===================== MENÚ HAMBURGUESA ===================== */
+.menu-toggle {
+  display:none;
+  cursor:pointer;
+  background:none;
+  border:none;
+  outline:none;
+}
+.menu-toggle span {
+  display:block;
+  width:28px;
+  height:3px;
+  background:#b71c1c;
+  margin:6px auto;
+  transition:all 0.3s ease;
+  border-radius:2px;
+}
+.menu-toggle.active span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
+.menu-toggle.active span:nth-child(2) { opacity:0; }
+.menu-toggle.active span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
+
+@media(max-width:768px){
+  .menu-toggle { display:block; }
+  .nav-links {
+    display:none;
+    flex-direction:column;
+    background:#fff;
+    position:absolute;
+    top:100%;
+    right:0;
+    width:220px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+    border-radius:0 0 0 8px;
+    padding:1rem;
+  }
+  .nav-links.active { display:flex; }
+  .nav-links a { margin:10px 0; }
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  position:relative;
+  text-align:left;
+}
+.hero h1 {
+  font-size:3rem;
+  font-weight:800;
+  color:#fff;
+  text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+.hero h3 {
+  font-size:1.5rem;
+  color:#f5f5f5;
+}
+.hero p {
+  font-size:1.1rem;
+  line-height:1.6;
+}
+.hero .btn {
+  border-radius:30px;
+  font-weight:600;
+}
+
+/* ===================== FORMULARIO ===================== */
+.formulario {
+  border-radius:15px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+.formulario input,
+.formulario select {
+  border-radius:8px;
+}
+.formulario button {
+  border-radius:8px;
+  font-weight:700;
+}
+
+/* ===================== BENEFICIOS ===================== */
+section h2 {
+  color:#b71c1c;
+}
+.list-group-item {
+  font-size:1rem;
+  padding:12px 16px;
+}
+
+/* ===================== CTA FINAL ===================== */
+.bg-danger h3 {
+  font-weight:700;
+}
+.bg-danger .btn {
+  border-radius:30px;
+  font-weight:600;
+}
+
+/* ===================== FOOTER ===================== */
+.footer-logo {
+  height:70px !important;
+  margin-bottom:10px;
+}
+footer p { margin-bottom:6px; }
+
+/* ===================== WHATSAPP FLOAT ===================== */
+.whatsapp-float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  border-radius:50%;
+  width:70px;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+  transition:transform .3s ease;
+  z-index:1000;
+  animation:bounce 3s infinite;
+}
+.whatsapp-float:hover { transform:scale(1.1); }
+@keyframes bounce {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-5px); }
+}
