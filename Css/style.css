@@ -4,7 +4,9 @@ body {
   margin:0;
   padding:0;
   overflow-x:hidden;
+  color:#333;
 }
+a { text-decoration:none; }
 
 /* ===================== TOPBAR ===================== */
 .topbar { 
@@ -41,7 +43,6 @@ header {
   outline: none;
   z-index: 1002;
 }
-
 .menu-toggle span {
   display: block;
   width: 28px;
@@ -51,7 +52,6 @@ header {
   transition: all 0.3s ease;
   border-radius: 2px;
 }
-
 /* animación a “X” */
 .menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -70,7 +70,6 @@ header {
   align-items: center;
   transition: all 0.3s ease;
 }
-
 .nav-links a {
   color:#333;
   margin:0 12px;
@@ -101,7 +100,6 @@ header {
   .menu-toggle {
     display: block;
   }
-
   .nav-links {
     display: none;
     flex-direction: column;
@@ -115,11 +113,9 @@ header {
     padding: 1rem;
     z-index: 1001;
   }
-
   .nav-links.active {
     display: flex;
   }
-
   .nav-links a {
     margin: 10px 0;
     color:#333;
@@ -198,12 +194,6 @@ header {
   box-shadow: 0 6px 15px rgba(140, 0, 0, 0.5);
 }
 
-/* ==== OCULTAR CONTROLES DEL CARRUSEL ==== */
-.swiper-button-prev,
-.swiper-button-next {
-  display: none !important;
-}
-
 /* ==== PAGINACIÓN DEL CARRUSEL ==== */
 .swiper-pagination-bullet {
   background: #b70000;
@@ -214,6 +204,18 @@ header {
   background: #8c0000;
   opacity: 1;
   transform: scale(1.2);
+}
+
+/* ==== BOTONES DEL CARRUSEL ==== */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #8c0000;
+  transition: transform 0.3s ease;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.2);
+  color: #b70000;
 }
 
 /* ===================== SINIESTRO ===================== */
@@ -337,23 +339,21 @@ footer a:hover {
   opacity: 0.9;
 }
 
+/* Carrusel aseguradoras */
 .aseguradorasSwiper {
   padding: 40px 0;
 }
-
 .aseguradorasSwiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .aseguradorasSwiper img {
   max-height: 80px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
 .aseguradorasSwiper img:hover {
   transform: scale(1.05);
   opacity: 0.9;

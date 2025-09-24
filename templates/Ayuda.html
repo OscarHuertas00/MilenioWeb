@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda | Milenio Seguros</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="../Css/ayuda.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../img/Logos/milenio.png" alt="Milenio Seguros">
+    </div>
+
+    <!-- Menú -->
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="#servicios">Seguros</a>
+      <a href="#">Empresas</a>
+      <a href="#">Aseguradoras</a>
+      <a href="#">Nuestra Empresa</a>
+      <a href="VidaDocente.html">Plan Vida docente</a>
+      <a href="Contacto.html">Contacto</a>
+      <a href="Ayuda.html" class="btn-ayuda">¿Ayuda?</a>
+    </nav>
+
+    <!-- Botón menú hamburguesa (mobile) -->
+    <button class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HERO con selector -->
+  <section class="hero-ayuda">
+    <h1>¿En qué te podemos ayudar?</h1>
+    <div class="search-box">
+      <select id="selector-seguro">
+        <option value="">Selecciona un producto de seguro</option>
+        <option value="seguros.html#vida">Seguro de Vida</option>
+        <option value="seguros.html#salud">Seguro de Salud</option>
+        <option value="seguros.html#vehicular">Seguro Vehicular</option>
+        <option value="empresas.html">Seguro Empresarial</option>
+        <option value="contacto.html">Asesoría Personalizada</option>
+      </select>
+      <button onclick="irASeguro()"><i class="fas fa-search"></i></button>
+    </div>
+  </section>
+
+  <!-- GRID DE AYUDA -->
+  <section class="ayuda-grid container">
+    <div class="ayuda-card">
+      <i class="fas fa-briefcase"></i>
+      <h3>Seguros Empresariales</h3>
+      <p>Protege tu empresa con pólizas para activos, empleados y responsabilidad civil.</p>
+      <span>+20 artículos</span>
+    </div>
+
+    <div class="ayuda-card">
+      <i class="fas fa-heart"></i>
+      <h3>Seguros Personales</h3>
+      <p>Planes flexibles para tu salud, vida y patrimonio familiar.</p>
+      <span>+15 artículos</span>
+    </div>
+
+    <div class="ayuda-card">
+      <i class="fas fa-car-side"></i>
+      <h3>Seguros Vehiculares</h3>
+      <p>Cobertura integral con asistencia en carretera 24/7.</p>
+      <span>+12 artículos</span>
+    </div>
+
+    <div class="ayuda-card">
+      <i class="fas fa-user-tie"></i>
+      <h3>Asesoría Personalizada</h3>
+      <p>Un experto te guía en la elección del seguro más adecuado para ti.</p>
+      <span>+8 artículos</span>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-ayuda">
+    <h2>Tu tranquilidad es nuestra prioridad</h2>
+    <p>Con Milenio Seguros tienes respaldo, confianza y asesoría experta.</p>
+    <a href="Contacto.html" class="btn">Contáctanos ahora</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Columna 1 -->
+      <div class="footer-col">
+        <img src="../img/Compañias_alidas/milenio.png" alt="Milenio Seguros" class="footer-logo">
+        <h3>MILENIO LTDA ASESORES DE SEGUROS</h3>
+        <p>Protegemos lo que más valoras. Nuestro compromiso es tu tranquilidad.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="footer-col">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="footer-col">
+        <h4>Contáctanos</h4>
+        <p><strong>Teléfono:</strong> +57 605 2823408</p>
+        <p><strong>Correo:</strong> contacto@milinioseguros.com</p>
+        <p><strong>Dirección:</strong> Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</p>
+        <a href="https://maps.google.com" target="_blank" class="btn-maps">
+          <i class="fas fa-map-marker-alt"></i> Ver ubicación en Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Milenio Seguros. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT NAV + SELECTOR -->
+  <script>
+    // Menú hamburguesa
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      toggle.classList.toggle("active");
+    });
+
+    // Redirección del selector
+    function irASeguro() {
+      const valor = document.getElementById("selector-seguro").value;
+      if (valor) {
+        window.location.href = valor;
+      } else {
+        alert("Por favor selecciona un producto de seguro.");
+      }
+    }
+  </script>
+
+</body>
+</html>
