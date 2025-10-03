@@ -1,50 +1,18 @@
-// ==================== CARRUSEL ====================
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-let interval;
+// ==================== ANIMACIONES EN SCROLL ====================
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate");
 
-function showSlide(i) {
-  slides.forEach((slide, idx) => {
-    slide.classList.remove("active", "fade-in", "fade-out");
-    if (idx === i) {
-      slide.classList.add("active", "fade-in");
-    } else if (idx === index) {
-      slide.classList.add("fade-out");
-    }
-  });
-  index = i;
-}
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // se anima una vez
+      }
+    });
+  }, { threshold: 0.2 });
 
-// Botón siguiente
-document.querySelector(".next").addEventListener("click", () => {
-  let nextIndex = (index + 1) % slides.length;
-  showSlide(nextIndex);
+  elements.forEach(el => observer.observe(el));
 });
-
-// Botón anterior
-document.querySelector(".prev").addEventListener("click", () => {
-  let prevIndex = (index - 1 + slides.length) % slides.length;
-  showSlide(prevIndex);
-});
-
-// Auto play
-function startAutoPlay() {
-  interval = setInterval(() => {
-    let nextIndex = (index + 1) % slides.length;
-    showSlide(nextIndex);
-  }, 5000);
-}
-
-function stopAutoPlay() {
-  clearInterval(interval);
-}
-
-startAutoPlay();
-
-// Pausar en hover
-document.querySelector(".carousel-container").addEventListener("mouseenter", stopAutoPlay);
-document.querySelector(".carousel-container").addEventListener("mouseleave", startAutoPlay);
-
 
 // ==================== MENÚ HAMBURGUESA ====================
 document.addEventListener("DOMContentLoaded", () => {
@@ -57,23 +25,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-var swiper = new Swiper(".aseguradorasSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    320: { slidesPerView: 2, spaceBetween: 20 },
-    768: { slidesPerView: 3, spaceBetween: 30 },
-    1024: { slidesPerView: 5, spaceBetween: 40 }
-  }
-});
-

@@ -14,17 +14,12 @@
   <!-- Iconos Remix -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- Swiper (carrusel moderno) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
   <!-- AOS Animaciones -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Tus estilos -->
   <link rel="stylesheet" href="./Css/style.css">
   <link rel="stylesheet" href="./Css/Responsive.css">
-  
-
 </head>
 <body>
 
@@ -56,10 +51,10 @@
     <!-- Menú -->
     <nav class="nav-links">
       <a href="#">Inicio</a>
-      <a href="#servicios">Seguros</a>
-      <a href="#">Empresas</a>
-      <a href="#">Aseguradoras</a>
-      <a href="#">Nuestra Empresa</a>
+      <a href="#servicios">Personas</a>
+      <a href="#servicios">Empresas</a>
+      <a href="templates/Milenio.html">Nosotros</a>
+      <a href="templates/Aliados.html">Aliadados</a>
       <a href="templates/VidaDocente.html">Plan Vida docente</a>
       <a href="templates/Contacto.html">Contacto</a>
       <a href="templates/VidaDocente.html" class="btn-ayuda">¿Ayuda?</a>
@@ -89,7 +84,7 @@
     </div>
   </section>
 
-  <!-- SERVICIOS -->
+  <!-- SERVICIOS (ya NO es carrusel, ahora tarjetas en grid) -->
   <section id="servicios" class="py-5">
     <div class="container text-center">
       <h2 class="fw-bold mb-3" data-aos="fade-up">Nuestros Servicios</h2>
@@ -97,89 +92,56 @@
         Soluciones a tu medida para personas, familias y empresas.
       </p>
 
-      <div class="swiper serviciosSwiper" data-aos="fade-up" data-aos-delay="400">
-        <div class="swiper-wrapper">
-
-          <!-- Card 1 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/Sample5.webp" alt="Seguro Automotriz">
-              <div class="card-body">
-                <h5 class="fw-bold">Seguro Automotriz</h5>
-                <p class="text-muted">Protege tu vehículo contra accidentes e imprevistos.</p>
-                <a href="#" class="btn-card">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/Sample6.webp" alt="Seguro SOAT">
-              <div class="card-body">
-                <h5 class="fw-bold">Seguro SOAT</h5>
-                <p class="text-muted">Obligatorio y con atención inmediata en accidentes.</p>
-                <a href="#" class="btn-card">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/Sample4.webp" alt="ARL">
-              <div class="card-body">
-                <h5 class="fw-bold">ARL</h5>
-                <p class="text-muted">Cobertura laboral para tus empleados.</p>
-                <a href="#" class="btn-card">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/Sample7.webp" alt="Seguro de Vida">
-              <div class="card-body">
-                <h5 class="fw-bold">Seguro de Vida</h5>
-                <p class="text-muted">Protege a tu familia con la mejor cobertura.</p>
-                <a href="#" class="btn-card">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/Sample6.webp" alt="Seguro de Salud">
-              <div class="card-body">
-                <h5 class="fw-bold">Seguro de Salud</h5>
-                <p class="text-muted">Atención médica inmediata y especializada.</p>
-                <a href="#" class="btn-card">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/Sample5.webp" alt="Seguro Empresarial">
-              <div class="card-body">
-                <h5 class="fw-bold">Seguro Empresarial</h5>
-                <p class="text-muted">Cubre tu negocio frente a todo riesgo.</p>
-                <a href="#" class="btn-card">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Paginación y botones de navegación -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      <div class="row g-4" data-aos="fade-up" data-aos-delay="400">
+  <!-- Card 1 -->
+  <div class="col-md-3">
+    <div class="card h-100">
+      <img src="./img/Sample5.webp" class="card-img-top" alt="Seguro Automotriz">
+      <div class="card-body d-flex flex-column">
+        <h5 class="fw-bold">Para el carro</h5>
+        <p class="text-muted">Protege tu vehículo contra accidentes e imprevistos.</p>
+        <a href="#" class="btn-card mt-auto">Ver más</a>
       </div>
     </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col-md-3">
+    <div class="card h-100">
+      <img src="./img/Sample6.webp" class="card-img-top" alt="Seguro SOAT">
+      <div class="card-body d-flex flex-column">
+        <h5 class="fw-bold">Para la salud</h5>
+        <p class="text-muted">Obligatorio y con atención inmediata en accidentes.</p>
+        <a href="#" class="btn-card mt-auto">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-3">
+    <div class="card h-100">
+      <img src="./img/Sample4.webp" class="card-img-top" alt="ARL">
+      <div class="card-body d-flex flex-column">
+        <h5 class="fw-bold">Para la vida</h5>
+        <p class="text-muted">Cobertura laboral para tus empleados.</p>
+        <a href="#" class="btn-card mt-auto">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="col-md-3">
+    <div class="card h-100">
+      <img src="./img/Sample7.webp" class="card-img-top" alt="Seguro de Vida">
+      <div class="card-body d-flex flex-column">
+        <h5 class="fw-bold">Para el hogar </h5>
+        <p class="text-muted">Protege a tu familia con la mejor cobertura.</p>
+        <a href="#" class="btn-card mt-auto">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
 
   <!-- SINIESTRO -->
@@ -287,23 +249,10 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    new Swiper(".serviciosSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      pagination: { el: ".swiper-pagination", clickable: true },
-      breakpoints: {
-        768: { slidesPerView: 2 },
-        992: { slidesPerView: 3 }
-      }
-    });
-  </script>
-
-  <script>
     // Toggle menú hamburguesa
     const toggleBtn = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
@@ -319,11 +268,6 @@
       });
     });
   </script>
-
-
-
-
-
 
 </body>
 </html>
