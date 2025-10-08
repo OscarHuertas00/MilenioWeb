@@ -336,3 +336,510 @@ footer a:hover { color: #dc3545; }
   from { opacity: 0; transform: translateX(30px); }
   to { opacity: 1; transform: translateX(0); }
 }
+/* ===================== SEGURO DE SALUD ===================== */
+
+/* HERO */
+.salud-hero {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../img/Sample2.webp') center/cover no-repeat;
+  min-height: 55vh; /* Más pequeño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+.salud-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.salud-hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+}
+
+/* INFO + FORMULARIO */
+.info-form-salud {
+  background: #fff;
+}
+.info-form-salud .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.info-salud {
+  flex: 1 1 48%;
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.info-salud h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #c8102e;
+}
+.info-salud ul li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+.info-salud i {
+  color: #c8102e;
+  font-size: 1.2rem;
+}
+
+/* FORMULARIO */
+.cotizacion-salud {
+  flex: 1 1 45%;
+}
+.cotizacion-salud form {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+}
+.cotizacion-salud form:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.cotizacion-salud .form-label {
+  font-weight: 600;
+  color: #333;
+}
+.cotizacion-salud .form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 0.7rem;
+}
+.cotizacion-salud input[type="checkbox"] {
+  accent-color: #c8102e;
+}
+.cotizacion-salud .btn {
+  background-color: #c8102e;
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.cotizacion-salud .btn:hover {
+  background-color: #a60d25;
+}
+
+/* SERVICIOS DE SALUD */
+.servicios-salud {
+  background: #fff;
+  padding: 4rem 0;
+}
+.servicios-salud h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.salud-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.salud-card img {
+  height: 150px; /* Más pequeñas */
+  object-fit: contain;
+  padding: 1rem;
+}
+.salud-card h5 {
+  color: #c8102e;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.salud-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+.salud-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* CTA FINAL */
+.cta-salud {
+  background: linear-gradient(135deg, #c8102e, #e6223a);
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #fff;
+}
+.cta-salud h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.cta-salud p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+.cta-salud .btn {
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  background: #fff;
+  color: #c8102e;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.cta-salud .btn:hover {
+  background: #c8102e;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .info-form-salud .container {
+    flex-direction: column;
+  }
+  .info-salud, .cotizacion-salud {
+    flex: 1 1 100%;
+  }
+  .salud-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===================== SEGURO DE VIDA ===================== */
+
+/* HERO VIDA */
+.vida-hero {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../../img/vida-banner.jpg') center/cover no-repeat;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+.vida-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.vida-hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+}
+
+/* BENEFICIOS VIDA */
+.vida-beneficios {
+  background: #fff;
+}
+.beneficio-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.beneficio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+.beneficio-card i {
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+.beneficio-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.beneficio-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* INFO + FORMULARIO VIDA */
+.info-form-vida {
+  background: #fff;
+}
+.vida-info {
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+.vida-info h2 {
+  color: #c8102e;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.vida-info ul li {
+  margin-bottom: 0.8rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+.cotizacion-vida form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.cotizacion-vida .form-label {
+  font-weight: 600;
+  color: #333;
+}
+.cotizacion-vida .form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+}
+.cotizacion-vida .btn {
+  background-color: #c8102e;
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.cotizacion-vida .btn:hover {
+  background-color: #a60d25;
+}
+
+/* FAQ VIDA */
+.faq-vida .accordion-button {
+  font-weight: 600;
+  color: #333;
+}
+.faq-vida .accordion-button:not(.collapsed) {
+  background-color: #c8102e;
+  color: #fff;
+}
+.faq-vida .accordion-body {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ALIADOS VIDA */
+.aliados-vida img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.aliados-vida img:hover {
+  filter: none;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .info-form-vida .row {
+    flex-direction: column;
+  }
+}
+/* ===================== HERO HOGAR ===================== */
+.hogar-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../../img/hogar-hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hogar-hero .hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hogar-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hogar-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hogar-hero .btn-primary {
+  background-color: #c8102e;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.hogar-hero .btn-primary:hover {
+  background-color: #a60d25;
+}
+
+/* ===================== COBERTURAS ===================== */
+.hogar-section {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hogar-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.hogar-coverages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.hogar-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hogar-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hogar-card i {
+  font-size: 2.5rem;
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+.hogar-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 600;
+}
+
+.hogar-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===================== FORMULARIO HOGAR ===================== */
+.hogar-formulario {
+  background-color: #fff;
+  padding: 80px 20px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.form-info {
+  color: #333;
+}
+
+.form-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #c8102e;
+}
+
+.form-info p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.form-info li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c8102e;
+}
+
+.form-info li i {
+  color: #c8102e;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #c8102e;
+  box-shadow: 0 0 4px rgba(200,16,46,0.3);
+}
+
+.contact-form button {
+  background-color: #c8102e;
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #a60d25;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .hogar-hero {
+    padding: 70px 15px;
+  }
+
+  .hogar-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hogar-section {
+    padding: 60px 15px;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hogar-card {
+    padding: 25px 15px;
+  }
+}

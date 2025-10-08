@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosotros - Milenio</title>
+  <title>Seguro de Salud | Milenio Seguros</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,65 +11,254 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <!-- Iconos Remix -->
+  <!-- Iconos -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
   <!-- AOS Animaciones -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Tus estilos -->
-  <link rel="stylesheet" href="../../Css/Milenio.css">
-  <link rel="stylesheet" href="../..Css/Responsive.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../../Css/Servicios.css">
+  <link rel="stylesheet" href="../../Css/Responsive.css">
 </head>
 <body>
 
-  <!-- TOPBAR -->
-  <div class="topbar">
-    <div class="container d-flex flex-wrap justify-content-center justify-content-md-start">
-      <span><i class="ri-phone-fill"></i> (+57) 6052823408</span>
-      <span><i class="ri-time-fill"></i> Lunes - Viernes: 8:00 - 18:00</span>
-      <span><i class="ri-map-pin-2-fill"></i> Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</span>
-    </div>
-  </div>
-
   <!-- HEADER -->
-<header class="site-header py-2" data-aos="fade-down">
-  <div class="container d-flex justify-content-between align-items-center">
-    
-    <!-- Logo -->
-    <div class="logo">
-      <img src="../..img/Logos/milenio.png" alt="Milenio Seguros">
+  <header class="site-header py-2" data-aos="fade-down">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="../../img/Logos/milenio.png" alt="Milenio Seguros">
+      </div>
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="../../index.html">Inicio</a>
+        <a href="#">Personas</a>
+        <a href="#">Empresas</a>
+        <a href="../Milenio.html">Nosotros</a>
+        <a href="../Aliados.html">Aliados</a>
+        <a href="../VidaDocente.html">Plan Vida Docente</a>
+        <a href="../Contacto.html">Contacto</a>
+        <a href="../Ayuda.html" class="btn-ayuda">¿Ayuda?</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Botón hamburguesa (solo en móvil) -->
-    <button class="menu-toggle" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span> 
-    </button>
 
-  <!-- Menú -->
-    <nav class="nav-links">
-      <a href="../../index.html">Inicio</a>
-      <a href="#servicios">Personas</a>
-      <a href="#servicios">Empresas</a>
-      <a href="../Milenio.html">Nosotros</a>
-      <a href="../Aliados.html">Aliadados</a>
-      <a href="../VidaDocente.html">Plan Vida docente</a>
-      <a href="../Contacto.html">Contacto</a>
-      <a href="../VidaDocente.html" class="btn-ayuda">¿Ayuda?</a>
-    </nav>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguro de Salud | Milenio Seguros</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Iconos -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../../Css/Servicios.css">
+  <link rel="stylesheet" href="../../Css/Responsive.css">
+</head>
+<body>
+
+  <!-- HEADER (ya lo tienes) -->
+  <header class="site-header py-2" data-aos="fade-down">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="../../img/Logos/milenio.png" alt="Milenio Seguros">
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="../../index.html">Inicio</a>
+        <a href="#">Personas</a>
+        <a href="#">Empresas</a>
+        <a href="../Milenio.html">Nosotros</a>
+        <a href="../Aliados.html">Aliados</a>
+        <a href="../VidaDocente.html">Plan Vida Docente</a>
+        <a href="../Contacto.html">Contacto</a>
+        <a href="../Ayuda.html" class="btn-ayuda">¿Ayuda?</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / portada -->
+  <section class="salud-hero d-flex align-items-center text-white text-center">
+    <div class="container" data-aos="fade-up">
+      <h1>Protección y Bienestar para tu Salud</h1>
+      <p>Con Milenio Seguros obtén cobertura médica avanzada, red nacional y respaldo profesional.</p>
+      <a href="#cotiza" class="btn btn-light mt-3">Cotiza tu Seguro</a>
+    </div>
+  </section>
+
+  <!-- Beneficios (lista rápida) -->
+  <section class="beneficios-rápidos py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <i class="ri-shield-check-line ri-2x text-danger"></i>
+          <h5 class="mt-3">Cobertura Nacional</h5>
+          <p>Acceso a clínicas y hospitales en todo el país.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="ri-time-line ri-2x text-danger"></i>
+          <h5 class="mt-3">Asistencia 24/7</h5>
+          <p>Atención médica cuando más la necesites.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="ri-heart-pulse-line ri-2x text-danger"></i>
+          <h5 class="mt-3">Prevención & Bienestar</h5>
+          <p>Chequeos periódicos y orientación médica preventiva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- INFORMACIÓN + FORMULARIO -->
+<section class="info-form-salud py-5" data-aos="fade-up">
+  <div class="container">
+    <div class="row align-items-start g-5">
+      
+      <!-- Información del Seguro -->
+      <div class="col-lg-6 info-salud">
+        <h2 class="mb-4 text-danger fw-bold">Seguro de Salud Milenio</h2>
+        <p>En Milenio Seguros entendemos la importancia de tu bienestar y el de tu familia. 
+        Nuestro <strong>Seguro de Salud</strong> te ofrece respaldo en atención médica, hospitalaria 
+        y preventiva con una red de clínicas aliadas en todo el país.</p>
+
+        <ul class="list-unstyled mt-4">
+          <li><i class="ri-heart-pulse-line text-danger me-2"></i> Atención médica integral.</li>
+          <li><i class="ri-hospital-line text-danger me-2"></i> Hospitalización y urgencias.</li>
+          <li><i class="ri-user-heart-line text-danger me-2"></i> Planes familiares y personales.</li>
+          <li><i class="ri-stethoscope-line text-danger me-2"></i> Cobertura en especialistas.</li>
+          <li><i class="ri-shield-check-line text-danger me-2"></i> Asesoría y acompañamiento 24/7.</li>
+        </ul>
+
+        <p class="mt-3">Protege tu salud y la de los tuyos con una cobertura flexible, amplia 
+        y adaptada a tus necesidades. ¡Cotiza tu plan hoy!</p>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-lg-6 cotizacion-salud">
+        <h3 class="mb-4 text-center text-danger fw-bold">Solicita tu cotización</h3>
+        <form id="formSalud" class="p-4 bg-white shadow rounded">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" id="correo" class="form-control" placeholder="ejemplo@email.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" id="telefono" class="form-control" placeholder="Tu número de contacto" required>
+          </div>
+
+          <div class="form-check my-3">
+            <input type="checkbox" id="acuerdo" class="form-check-input" required>
+            <label for="acuerdo" class="form-check-label">
+              Acepto el tratamiento de mis datos personales según la política de privacidad.
+            </label>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-danger px-5">Enviar solicitud</button>
+          </div>
+
+          <div id="alertaEnvio" class="alert alert-success mt-3 d-none text-center">
+            ¡Tu solicitud fue enviada correctamente!
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-</header>
+</section>
 
 
-<!-- FOOTER -->
+  <!-- SECCIÓN FAQ -->
+  <section class="faq-salud py-5 bg-white" data-aos="fade-up">
+    <div class="container">
+      <h3 class="text-center mb-4">Preguntas Frecuentes</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true">
+              ¿Qué cubre un seguro de salud?
+            </button>
+          </h2>
+          <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Cubre gastos médicos ambulatorios, hospitalización, emergencias, medicamentos y más, según plan elegido.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+              ¿Puedo elegir libremente al médico o clínica?
+            </button>
+          </h2>
+          <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sí, dependiendo del plan contratado tienes libertad para escoger los centros médicos y especialistas.
+            </div>
+          </div>
+        </div>
+        <!-- Agrega más preguntas aquí -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN ALIADOS -->
+  <section class="aliados-salud py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h3 class="mb-4">Aliados en Salud</h3>
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+        <img src="../../img/aliado1.png" alt="Aliado 1" class="img-fluid" style="max-width: 120px;">
+        <img src="../../img/aliado2.png" alt="Aliado 2" class="img-fluid" style="max-width: 120px;">
+        <img src="../../img/aliado3.png" alt="Aliado 3" class="img-fluid" style="max-width: 120px;">
+        <!-- más logos -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-salud py-5 text-white text-center d-flex align-items-center" style="background: #c8102e;" data-aos="fade-up">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Tu Salud No Puede Esperar</h2>
+      <p class="mb-4">Solicita tu seguro ahora y recibe asesoría inmediata sin costo.</p>
+      <a href="#cotiza" class="btn btn-light px-5">Solicitar Ahora</a>
+    </div>
+  </section>
+
+  <!-- FOOTER (ya lo tienes) -->
+
+  <!-- Scripts al final (ya los tienes) -->
+
+
+
+
+  <!-- FOOTER -->
   <footer class="py-4" data-aos="fade-up">
     <div class="container d-flex flex-wrap justify-content-between">
-      
-      <!-- Columna 1: Logo + descripción -->
       <div class="col-md-4 mb-3 text-center text-md-start">
-        <img src="../img/Logos/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3">
+        <img src="../../img/Logos/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3">
         <h2>MILENIO LTDA ASESORES DE SEGUROS</h2>
         <p>Protegemos lo que más valoras. Nuestro compromiso es tu tranquilidad.</p>
         <div class="social-links">
@@ -79,7 +268,6 @@
         </div>
       </div>
 
-      <!-- Columna 2: Enlaces rápidos -->
       <div class="col-md-4 mb-3">
         <p class="fw-bold">Enlaces rápidos</p>
         <a href="#">Inicio</a><br>
@@ -88,34 +276,27 @@
         <a href="#">Contáctanos</a>
       </div>
 
-      <!-- Columna 3: Contacto + Botón Google Maps -->
       <div class="col-md-4 mb-3">
         <p class="fw-bold">Contáctanos</p>
         <p>Teléfono: +57 605 2823408</p>
         <p>Correo: contacto@milenioseguros.com</p>
         <p>Dirección: Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</p>
-
-        <!-- Botón Google Maps -->
         <div class="mt-3">
-          <a href="https://www.google.com/maps?q=Cr17+24+-+39+Cl+Nariño+Sincelejo+Sucre" 
-             target="_blank" 
-             class="btn-maps">
-            <i class="ri-map-pin-2-fill"></i> Ver ubicación en Google Maps
+          <a href="https://www.google.com/maps?q=Cr17+24+-+39+Cl+Nariño+Sincelejo+Sucre" target="_blank" class="btn-maps">
+            <i class="ri-map-pin-2-fill"></i> Ver ubicación
           </a>
         </div>
       </div>
     </div>
-
     <div class="text-center border-top pt-3 mt-3">
       <p class="mb-0">© 2025 Milenio Seguros. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <!-- WhatsApp -->
-  <a href="https://wa.me/3116166922?text=Hola,%20quiero%20más%20información%20sobre%20sus%20seguros"
+  <a href="https://wa.me/3116166922?text=Hola,%20quiero%20más%20información%20sobre%20el%20seguro%20de%20salud"
      class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-         alt="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
   <!-- Scripts -->
@@ -124,21 +305,22 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Toggle menú hamburguesa
+    // Menú móvil
     const toggleBtn = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
+    toggleBtn.addEventListener("click", () => navLinks.classList.toggle("active"));
+    document.querySelectorAll(".nav-links a").forEach(link => 
+      link.addEventListener("click", () => navLinks.classList.remove("active")));
 
-    toggleBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-
-    // Cierra menú al hacer clic en un enlace
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-      });
+    // Envío del formulario
+    const form = document.getElementById('formSalud');
+    const alerta = document.getElementById('alertaEnvio');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      alerta.classList.remove('d-none');
+      form.reset();
+      setTimeout(() => alerta.classList.add('d-none'), 4000);
     });
   </script>
-
 </body>
 </html>
