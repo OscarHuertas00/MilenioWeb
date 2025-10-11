@@ -516,7 +516,7 @@ footer a:hover { color: #dc3545; }
 /* HERO VIDA */
 .vida-hero {
   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url('../../img/vida-banner.jpg') center/cover no-repeat;
+              url('../img/Sample7.webp') center/cover no-repeat;
   min-height: 55vh;
   display: flex;
   align-items: center;
@@ -641,7 +641,7 @@ footer a:hover { color: #dc3545; }
 /* ===================== HERO HOGAR ===================== */
 .hogar-hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('../../img/hogar-hero.jpg') center/cover no-repeat;
+              url('../img/Sample4.webp') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 100px 20px;

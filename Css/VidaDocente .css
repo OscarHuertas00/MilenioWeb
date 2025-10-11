@@ -13,11 +13,19 @@ a { text-decoration:none; }
   position:sticky;
   top:0;
   z-index:1000;
+  background:#fff;
+  transition:all 0.3s ease;
 }
+.site-header.scrolled {
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* ===================== LOGO ===================== */
 .logo img { 
   height:100px !important;   /* logo más grande */
   max-height:120px;          /* límite */
-  transition: transform 0.3s ease;
+  transition:transform 0.3s ease;
 }
 .logo img:hover { transform:scale(1.08); }
 
@@ -26,6 +34,7 @@ a { text-decoration:none; }
   display:flex;
   align-items:center;
   gap:20px;
+  transition:all 0.3s ease;
 }
 .nav-links a {
   color:#333;
@@ -93,6 +102,9 @@ a { text-decoration:none; }
 .hero {
   position:relative;
   text-align:left;
+  background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero.jpg') center/cover no-repeat;
+  color:#fff;
+  padding:120px 20px;
 }
 .hero h1 {
   font-size:3rem;
@@ -107,50 +119,107 @@ a { text-decoration:none; }
 .hero p {
   font-size:1.1rem;
   line-height:1.6;
+  max-width:600px;
 }
 .hero .btn {
   border-radius:30px;
   font-weight:600;
+  background:#b71c1c;
+  color:#fff;
+  transition:all 0.3s ease;
+}
+.hero .btn:hover {
+  background:#900d0d;
+  transform:scale(1.05);
 }
 
 /* ===================== FORMULARIO ===================== */
 .formulario {
   border-radius:15px;
   box-shadow:0 6px 20px rgba(0,0,0,0.15);
+  padding:30px;
+  background:#fff;
+  margin-top:50px;
 }
 .formulario input,
 .formulario select {
   border-radius:8px;
+  border:1px solid #ccc;
+  padding:10px;
 }
 .formulario button {
   border-radius:8px;
   font-weight:700;
+  background:#b71c1c;
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+  transition:all 0.3s ease;
+}
+.formulario button:hover {
+  background:#900d0d;
+  transform:translateY(-2px);
 }
 
 /* ===================== BENEFICIOS ===================== */
 section h2 {
   color:#b71c1c;
+  font-weight:700;
+  text-align:center;
+  margin-bottom:30px;
 }
 .list-group-item {
   font-size:1rem;
   padding:12px 16px;
+  transition:all 0.3s ease;
+}
+.list-group-item:hover {
+  background:#f8d7da;
+  transform:translateX(5px);
 }
 
 /* ===================== CTA FINAL ===================== */
+.bg-danger {
+  background:#b71c1c !important;
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
 .bg-danger h3 {
   font-weight:700;
 }
 .bg-danger .btn {
   border-radius:30px;
   font-weight:600;
+  background:#fff;
+  color:#b71c1c;
+  border:none;
+  padding:10px 25px;
+  transition:all 0.3s ease;
+}
+.bg-danger .btn:hover {
+  background:#f5f5f5;
+  transform:scale(1.05);
 }
 
 /* ===================== FOOTER ===================== */
+footer {
+  background:#111;
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
 .footer-logo {
   height:70px !important;
   margin-bottom:10px;
 }
 footer p { margin-bottom:6px; }
+footer a {
+  color:#fff;
+  text-decoration:none;
+  transition:color 0.3s ease;
+}
+footer a:hover { color:#b71c1c; }
 
 /* ===================== WHATSAPP FLOAT ===================== */
 .whatsapp-float {
@@ -173,4 +242,31 @@ footer p { margin-bottom:6px; }
 @keyframes bounce {
   0%,100% { transform:translateY(0); }
   50% { transform:translateY(-5px); }
+}
+
+/* ===================== ANIMACIONES SCROLL ===================== */
+.fade-element {
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.8s ease-out;
+}
+.fade-element.visible {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:992px){
+  .hero h1 { font-size:2.4rem; }
+  .hero h3 { font-size:1.2rem; }
+  .hero p { font-size:1rem; }
+}
+@media(max-width:768px){
+  .hero { text-align:center; }
+  .hero p { margin:0 auto; }
+  .formulario { padding:20px; }
+}
+@media(max-width:576px){
+  .hero h1 { font-size:1.8rem; }
+  .whatsapp-float { width:60px; height:60px; }
 }

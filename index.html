@@ -51,10 +51,11 @@
     <!-- Menú -->
     <nav class="nav-links">
       <a href="#">Inicio</a>
-      <a href="#servicios">Personas</a>
-      <a href="#servicios">Empresas</a>
+     <a  id="header-personas" class="header-switch" data-target="personas">Personas</a>
+<a  id="header-empresas" class="header-switch" data-target="empresas">Empresas</a>
+
       <a href="templates/Milenio.html">Nosotros</a>
-      <a href="templates/Aliados.html">Aliadados</a>
+      <a href="templates/Aliados.html">Aliados</a>
       <a href="templates/VidaDocente.html">Plan Vida docente</a>
       <a href="templates/Contacto.html">Contacto</a>
       <a href="templates/VidaDocente.html" class="btn-ayuda">¿Ayuda?</a>
@@ -75,75 +76,113 @@
   </section>
 
   <!-- INTRO -->
-  <section class="intro" data-aos="fade-up">
-    <div class="container">
-      <h3>
-        Como tus <span class="fw-bold">asesores de seguros</span><br>
-        <span class="highlight">te ayudamos a encontrar</span> la cobertura más adecuada para tu Empresa
-      </h3>
-    </div>
-  </section>
-
-  <!-- SERVICIOS (ya NO es carrusel, ahora tarjetas en grid) -->
-  <section id="servicios" class="py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-3" data-aos="fade-up">Nuestros Servicios</h2>
-      <p class="text-muted mb-4" data-aos="fade-up" data-aos-delay="200">
-        Soluciones a tu medida para personas, familias y empresas.
-      </p>
-
-      <div class="row g-4" data-aos="fade-up" data-aos-delay="400">
-  <!-- Card 1 -->
-  <div class="col-md-3">
-    <div class="card h-100">
-      <img src="./img/Sample5.webp" class="card-img-top" alt="Seguro Automotriz">
-      <div class="card-body d-flex flex-column">
-        <h5 class="fw-bold">Para el carro</h5>
-        <p class="text-muted">Protege tu vehículo contra accidentes e imprevistos.</p>
-        <a href="templates/Servicios/Carro.html" class="btn-card mt-auto">Ver más</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="col-md-3">
-    <div class="card h-100">
-      <img src="./img/Sample6.webp" class="card-img-top" alt="Seguro SOAT">
-      <div class="card-body d-flex flex-column">
-        <h5 class="fw-bold">Para la salud</h5>
-        <p class="text-muted">Obligatorio y con atención inmediata en accidentes.</p>
-        <a href="templates/Servicios/Salud.html" class="btn-card mt-auto">Ver más</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="col-md-3">
-    <div class="card h-100">
-      <img src="./img/Sample4.webp" class="card-img-top" alt="ARL">
-      <div class="card-body d-flex flex-column">
-        <h5 class="fw-bold">Para la vida</h5>
-        <p class="text-muted">Cobertura laboral para tus empleados.</p>
-        <a href="templates/Servicios/Vida.html" class="btn-card mt-auto">Ver más</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="col-md-3">
-    <div class="card h-100">
-      <img src="./img/Sample7.webp" class="card-img-top" alt="Seguro de Vida">
-      <div class="card-body d-flex flex-column">
-        <h5 class="fw-bold">Para el hogar </h5>
-        <p class="text-muted">Protege a tu familia con la mejor cobertura.</p>
-        <a href="templates/Servicios/hogar.html" class="btn-card mt-auto">Ver más</a>
-      </div>
-    </div>
-  </div>
+  <section id="servicios" class="intro" data-aos="fade-up">
+  <div class="mensaje-empresa">
+  Como tus <strong>asesores de seguros</strong> te ayudamos a encontrar la cobertura más adecuada para tu Empresa
 </div>
 
   </section>
 
+  <section  class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Nuestros Servicios</h2>
+      <p>Selecciona el tipo de cliente</p>
+      <div class="servicios-tabs">
+        <button id="btn-personas" class="tab-btn active">Personas</button>
+        <button id="btn-empresas" class="tab-btn">Empresas</button>
+      </div>
+    </div>
+
+    <!-- Personas -->
+    <div id="servicios-personas" class="row servicios-grupo">
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample5.webp" class="card-img-top" alt="Seguro Automotriz">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">Movilidad</h5>
+            <p class="text-muted">Protege tu vehículo contra accidentes e imprevistos.</p>
+            <a href="templates/Servicios/Carro.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample6.webp" class="card-img-top" alt="Seguro SOAT">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">Salud</h5>
+            <p class="text-muted">Atención inmediata en accidentes y emergencias.</p>
+            <a href="templates/Servicios/Salud.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample4.webp" class="card-img-top" alt="Seguro de Vida">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">Vida</h5>
+            <p class="text-muted">Seguridad financiera para ti y tu familia.</p>
+            <a href="templates/Servicios/Vida.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample7.webp" class="card-img-top" alt="Hogar">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">Hogar</h5>
+            <p class="text-muted">Protege tu vivienda y pertenencias.</p>
+            <a href="templates/Servicios/Hogar.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empresas -->
+    <div id="servicios-empresas" class="row servicios-grupo" style="display: none;">
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample5.webp" class="card-img-top" alt="ARL Empresarial">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">ARL Empresarial</h5>
+            <p class="text-muted">Protege a tus empleados frente a riesgos laborales.</p>
+            <a href="templates/Servicios/EmpresasARL.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample7.webp" class="card-img-top" alt="Responsabilidad Civil">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">Responsabilidad Civil</h5>
+            <p class="text-muted">Protege tu empresa ante imprevistos legales o daños.</p>
+            <a href="templates/Servicios/RC.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample4.webp" class="card-img-top" alt="Transporte">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">Transporte</h5>
+            <p class="text-muted">Asegura tus mercancías en tránsito terrestre, aéreo o marítimo.</p>
+            <a href="templates/Servicios/Transporte.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 animate">
+        <div class="card h-100">
+          <img src="./img/Sample5.webp" class="card-img-top" alt="Pymes">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold">Pymes</h5>
+            <p class="text-muted">Coberturas integrales para pequeñas y medianas empresas.</p>
+            <a href="templates/Servicios/Pymes.html" class="btn-card mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- SINIESTRO -->
   <section class="siniestro text-white text-center py-5" data-aos="zoom-in-up">
     <div class="container">
@@ -268,6 +307,9 @@
       });
     });
   </script>
+
+  <script src="main.js"></script>
+
 
 </body>
 </html>

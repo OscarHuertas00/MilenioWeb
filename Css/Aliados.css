@@ -2,7 +2,7 @@
 :root {
   --color-primario: #c8102e; /* Rojo */
   --color-secundario: #111;  /* Negro */
-  --color-blanco: #fff; 
+  --color-blanco: #fff;
   --color-gris-claro: #f5f5f5;
   --radius: 12px;
   --shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -15,44 +15,53 @@
   padding: 0;
   box-sizing: border-box;
 }
-body { 
-  font-family: 'Lato', sans-serif; 
+body {
+  font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   color: #333;
   background: #fff;
   padding-top: 120px; /* espacio para el header fijo */
+  scroll-behavior: smooth;
 }
 a { text-decoration: none; }
 
 /* ===================== TOPBAR ===================== */
-.topbar { 
-  background: var(--color-primario); 
-  color: var(--color-blanco); 
-  font-size: 0.9rem; 
-  padding: 8px 0; 
+.topbar {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  font-size: 0.9rem;
+  padding: 8px 0;
   text-align: center;
+  animation: fadeInDown 1s ease;
 }
 .topbar span { margin-right: 20px; }
 
 /* ===================== HEADER ===================== */
-header { 
-  background: var(--color-blanco); 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+header {
+  background: var(--color-blanco);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; /* logo izq / menú der */
+  justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 .logo { display: flex; align-items: center; }
-.logo img { 
-  max-height: 100px; 
-  width: auto; 
+.logo img {
+  max-height: 100px;
+  width: auto;
+  transition: transform 0.3s ease;
 }
+.logo img:hover { transform: scale(1.05); }
 
 /* ===================== MENÚ HAMBURGUESA ===================== */
 .menu-toggle {
@@ -76,9 +85,7 @@ header {
 .menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-.menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
 .menu-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
@@ -124,13 +131,13 @@ header {
     top: 100%;
     right: 0;
     background: white;
-    width: 220px;
+    width: 240px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    border-radius: 0 0 0 8px;
+    border-radius: 0 0 0 12px;
     padding: 1rem;
     z-index: 1001;
   }
-  .nav-links.active { display: flex; }
+  .nav-links.active { display: flex; animation: fadeIn 0.5s ease; }
   .nav-links a {
     margin: 10px 0;
     color: #333;
@@ -143,12 +150,12 @@ header {
   color: var(--color-blanco);
   text-align: center;
   padding: 80px 20px 60px;
+  animation: fadeInUp 1.2s ease;
 }
 .aseguradoras-header h2 {
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: var(--color-blanco);
 }
 .aseguradoras-header p {
   font-size: 1.1rem;
@@ -177,6 +184,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: fadeInUp 1.2s ease;
 }
 .aseguradora-box:hover {
   background: var(--color-blanco);
@@ -209,6 +217,18 @@ header {
   background: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
 }
 
+/* ------------------ RESPONSIVE ASEGURADORAS ------------------ */
+@media (max-width: 1024px) {
+  .aseguradoras-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .aseguradoras-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ------------------ BANNER PAGOS ------------------ */
 .banner-pagos {
   position: relative;
@@ -220,6 +240,7 @@ header {
   text-align: center;
   color: var(--color-blanco);
   background: url("../img/banner-pagos.jpg") no-repeat center center/cover;
+  overflow: hidden;
 }
 .banner-pagos .banner-overlay {
   position: absolute;
@@ -232,6 +253,7 @@ header {
   z-index: 1;
   max-width: 900px;
   padding: 40px 20px;
+  animation: fadeIn 1.5s ease;
 }
 .banner-contenido h2 {
   font-size: 2.4rem;
@@ -275,11 +297,12 @@ header {
 }
 
 /* ===================== FOOTER ===================== */
-footer { 
-  background: var(--color-secundario);  
-  color: var(--color-blanco);       
+footer {
+  background: var(--color-secundario);
+  color: var(--color-blanco);
   font-size: 0.9rem;
   padding: 40px 20px;
+  animation: fadeInUp 1.2s ease;
 }
 footer h2 { font-size: 1.2rem; }
 footer a { color: var(--color-blanco); text-decoration: none; }
@@ -320,7 +343,22 @@ footer a:hover { color: var(--color-primario); }
 }
 .whatsapp-float:hover { transform: scale(1.1); }
 .whatsapp-float img { width: 35px; height: 35px; }
+
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
+}
+
+/* ===================== ANIMACIONES ===================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
