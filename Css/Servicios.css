@@ -160,56 +160,6 @@ header {
 }
 
 
-/* ===================== FORMULARIO ===================== */
-.cotizacion {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 40px;
-  animation: fadeInRight 1s ease;
-}
-
-.cotizacion h2 {
-  color: #c8102e;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.cotizacion input,
-.cotizacion select,
-.cotizacion textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.cotizacion input:focus,
-.cotizacion select:focus,
-.cotizacion textarea:focus {
-  border-color: #c8102e;
-  outline: none;
-  box-shadow: 0 0 6px rgba(200,16,46,0.2);
-}
-
-.cotizacion button {
-  background: #c8102e;
-  border: none;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.cotizacion button:hover {
-  background: #a50d25;
-  transform: translateY(-2px);
-}
-
 /* ===================== SECCIÓN SOAT ===================== */
 .soat-section {
   position: relative;
@@ -362,74 +312,6 @@ footer a:hover { color: #dc3545; }
   line-height: 1.6;
 }
 
-/* INFO + FORMULARIO */
-.info-form-salud {
-  background: #fff;
-}
-.info-form-salud .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.info-salud {
-  flex: 1 1 48%;
-  background: #fafafa;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
-.info-salud h2 {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #c8102e;
-}
-.info-salud ul li {
-  margin-bottom: 0.6rem;
-  font-size: 0.95rem;
-  color: #444;
-}
-.info-salud i {
-  color: #c8102e;
-  font-size: 1.2rem;
-}
-
-/* FORMULARIO */
-.cotizacion-salud {
-  flex: 1 1 45%;
-}
-.cotizacion-salud form {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  transition: box-shadow 0.3s ease;
-}
-.cotizacion-salud form:hover {
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}
-.cotizacion-salud .form-label {
-  font-weight: 600;
-  color: #333;
-}
-.cotizacion-salud .form-control {
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  padding: 0.7rem;
-}
-.cotizacion-salud input[type="checkbox"] {
-  accent-color: #c8102e;
-}
-.cotizacion-salud .btn {
-  background-color: #c8102e;
-  border: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-.cotizacion-salud .btn:hover {
-  background-color: #a60d25;
-}
-
 /* SERVICIOS DE SALUD */
 .servicios-salud {
   background: #fff;
@@ -564,64 +446,6 @@ footer a:hover { color: #dc3545; }
   font-size: 0.95rem;
 }
 
-/* INFO + FORMULARIO VIDA */
-.info-form-vida {
-  background: #fff;
-}
-.vida-info {
-  background: #fafafa;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
-.vida-info h2 {
-  color: #c8102e;
-  font-size: 1.9rem;
-  font-weight: 700;
-}
-.vida-info ul li {
-  margin-bottom: 0.8rem;
-  color: #444;
-  font-size: 0.95rem;
-}
-.cotizacion-vida form {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-.cotizacion-vida .form-label {
-  font-weight: 600;
-  color: #333;
-}
-.cotizacion-vida .form-control {
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  padding: 0.75rem;
-}
-.cotizacion-vida .btn {
-  background-color: #c8102e;
-  border: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-.cotizacion-vida .btn:hover {
-  background-color: #a60d25;
-}
-
-/* FAQ VIDA */
-.faq-vida .accordion-button {
-  font-weight: 600;
-  color: #333;
-}
-.faq-vida .accordion-button:not(.collapsed) {
-  background-color: #c8102e;
-  color: #fff;
-}
-.faq-vida .accordion-body {
-  color: #555;
-  font-size: 0.95rem;
-}
-
 /* ALIADOS VIDA */
 .aliados-vida img {
   filter: grayscale(100%);
@@ -732,94 +556,7 @@ footer a:hover { color: #dc3545; }
   line-height: 1.6;
 }
 
-/* ===================== FORMULARIO HOGAR ===================== */
-.hogar-formulario {
-  background-color: #fff;
-  padding: 80px 20px;
-}
 
-.form-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 50px;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.form-info {
-  color: #333;
-}
-
-.form-info h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #c8102e;
-}
-
-.form-info p {
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.form-info ul {
-  list-style: none;
-  padding: 0;
-}
-
-.form-info li {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #c8102e;
-}
-
-.form-info li i {
-  color: #c8102e;
-  font-size: 1.1rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.95rem;
-  transition: border 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #c8102e;
-  box-shadow: 0 0 4px rgba(200,16,46,0.3);
-}
-
-.contact-form button {
-  background-color: #c8102e;
-  color: #fff;
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #a60d25;
-}
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 768px) {
@@ -841,5 +578,95 @@ footer a:hover { color: #dc3545; }
 
   .hogar-card {
     padding: 25px 15px;
+  }
+}
+
+/* ===================== FORMULARIO ESTÁNDAR ===================== */
+.formulario-estandar {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff5f5;
+  padding: 40px 50px;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  border: 1px solid #f3dcdc;
+}
+
+/* Fondo con degradado suave */
+.fondo-empresa {
+  background: linear-gradient(to bottom right, #fff5f5, #ffe9e9);
+}
+
+/* Título y texto */
+.titulo-form {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #c8102e;
+}
+
+.texto-form {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Campos */
+.formulario-estandar label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.formulario-estandar .form-control {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.formulario-estandar .form-control:focus {
+  border-color: #c8102e;
+  box-shadow: 0 0 6px rgba(200, 16, 46, 0.3);
+}
+
+/* Checkbox */
+.formulario-estandar .form-check-label {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+/* Botón */
+.formulario-estandar .btn {
+  background: linear-gradient(90deg, #c8102e, #a50d23);
+  color: #fff;
+  border: none;
+  padding: 14px 0;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.formulario-estandar .btn:hover {
+  background: linear-gradient(90deg, #a50d23, #c8102e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(200, 16, 46, 0.3);
+}
+
+/* Adaptabilidad */
+@media (max-width: 768px) {
+  .formulario-estandar {
+    padding: 25px;
+  }
+
+  .titulo-form {
+    font-size: 1.6rem;
   }
 }

@@ -22,182 +22,231 @@
   <link rel="stylesheet" href="../../Css/Responsive.css">
 </head>
 <body>
+
   <!-- HEADER -->
-<header class="site-header py-2" data-aos="fade-down">
-  <div class="container d-flex justify-content-between align-items-center">
-    
-    <!-- Logo -->
-    <div class="logo">
-      <img src="../../img/Logos/milenio.png" alt="Milenio Seguros">
+  <header class="site-header py-2" data-aos="fade-down">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../../img/Logos/milenio.png" alt="Milenio Seguros">
+      </div>
+
+      <!-- Botón hamburguesa (solo en móvil) -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menú -->
+      <nav class="nav-links">
+        <a href="../../index.html">Inicio</a>
+        <a href="#servicios">Personas</a>
+        <a href="#servicios">Empresas</a>
+        <a href="../Milenio.html">Nosotros</a>
+        <a href="../Aliados.html">Aliados</a>
+        <a href="../VidaDocente.html">Plan Vida docente</a>
+        <a href="../Contacto.html">Contacto</a>
+        <a href="../VidaDocente.html" class="btn-ayuda">¿Ayuda?</a>
+      </nav>
+
     </div>
+  </header>
 
-    <!-- Botón hamburguesa (solo en móvil) -->
-    <button class="menu-toggle" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span> 
-    </button>
+  <!-- HERO VIDA -->
+  <section class="vida-hero text-center text-white d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+      <h1>Seguro de Vida Milenio</h1>
+      <p>Protege el mañana de tu familia hoy. Planes flexibles con respaldo humano y económico.</p>
+      <a href="#vida-cotiza" class="btn btn-light mt-3 px-4 py-2">Cotizar seguro de vida</a>
+    </div>
+  </section>
 
-    <!-- Menú -->
-    <nav class="nav-links">
-      <a href="../../index.html">Inicio</a>
-      <a href="#servicios">Personas</a>
-      <a href="#servicios">Empresas</a>
-      <a href="../Milenio.html">Nosotros</a>
-      <a href="../Aliados.html">Aliadados</a>
-      <a href="../VidaDocente.html">Plan Vida docente</a>
-      <a href="../Contacto.html">Contacto</a>
-      <a href="../VidaDocente.html" class="btn-ayuda">¿Ayuda?</a>
-    </nav>
-  </div>
-</header>
+  <!-- BENEFICIOS / COBERTURAS DESTACADAS -->
+  <section class="vida-beneficios py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Coberturas principales</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="beneficio-card text-center">
+            <i class="ri-heart-fill text-danger ri-3x mb-2"></i>
+            <h5>Fallecimiento</h5>
+            <p>Indemnización para tus beneficiarios en caso de tu fallecimiento.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="beneficio-card text-center">
+            <i class="ri-emotion-laugh-fill text-danger ri-3x mb-2"></i>
+            <h5>Invalidez o Desmembración</h5>
+            <p>Cobertura ante discapacidad grave por accidente.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="beneficio-card text-center">
+            <i class="ri-hospital-fill text-danger ri-3x mb-2"></i>
+            <h5>Enfermedades Graves</h5>
+            <p>Recibe respaldo económico si eres diagnosticado con una enfermedad cubierta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- HERO VIDA -->
-<section class="vida-hero text-center text-white d-flex align-items-center justify-content-center">
-  <div class="container" data-aos="fade-up">
-    <h1>Seguro de Vida Milenio</h1>
-    <p>Protege el mañana de tu familia hoy. Planes flexibles con respaldo humano y económico.</p>
-    <a href="#vida-cotiza" class="btn btn-light mt-3 px-4 py-2">Cotizar seguro de vida</a>
-  </div>
-</section>
-
-<!-- BENEFICIOS / COBERTURAS DESTACADAS -->
-<section class="vida-beneficios py-5 bg-light" data-aos="fade-up">
+  <!-- FORMULARIO DE COTIZACIÓN HOGAR -->
+  <!-- SECCIÓN DE COTIZACIÓN -->
+<section id="cotiza" class="py-5 fondo-empresa">
   <div class="container">
-    <h2 class="text-center mb-4">Coberturas principales</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="beneficio-card text-center">
-          <i class="ri-heart-fill text-danger ri-3x mb-2"></i>
-          <h5>Fallecimiento</h5>
-          <p>Indemnización para tus beneficiarios en caso de tu fallecimiento.</p>
+    <div class="row align-items-center">
+
+      <!-- Información lateral -->
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="p-4 bg-white shadow-sm rounded-4">
+          <h2 class="titulo-form">Solicita tu Cotización</h2>
+          <p class="texto-form">
+            Déjanos tus datos y un asesor especializado se comunicará contigo para ofrecerte la mejor opción según tus necesidades.
+            En <strong>Milenio Seguros</strong> protegemos tu hogar y tu tranquilidad con planes flexibles que se adaptan a tu presupuesto.
+          </p>
+          <p class="texto-form">
+            Nuestro equipo de expertos te orientará sin compromiso, explicando cada cobertura y beneficio. Recibirás atención personalizada,
+            acompañamiento continuo y respuesta rápida a tus solicitudes.
+          </p>
+
+          <ul class="list-unstyled text-start mb-4">
+            <li><i class="ri-checkbox-circle-line text-danger"></i> Asesoría personalizada con expertos</li>
+            <li><i class="ri-checkbox-circle-line text-danger"></i> Sin compromiso ni costos ocultos</li>
+            <li><i class="ri-checkbox-circle-line text-danger"></i> Atención en menos de 24 horas</li>
+            <li><i class="ri-checkbox-circle-line text-danger"></i> Cobertura en todo el territorio nacional</li>
+          </ul>
+
+          <div class="reseña-form p-3 bg-light border rounded shadow-sm">
+            <i class="ri-chat-quote-line text-danger display-6 mb-2"></i>
+            <p class="mb-0">
+              “Protegí mi hogar con <strong>Milenio Seguros</strong> y la atención fue excelente. 
+              El asesor me explicó todo con claridad y en menos de un día tenía mi póliza activa.”
+              <br><strong>— Laura G., Cliente satisfecha</strong>
+            </p>
+          </div>
+
+          <div class="mt-3 text-center">
+            <p class="text-muted mb-1">
+              <i class="ri-star-fill text-warning"></i> <strong>4.9/5</strong> en satisfacción general
+            </p>
+            <small>Más de 2.500 hogares protegidos en toda Colombia</small>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="beneficio-card text-center">
-          <i class="ri-emotion-laugh-fill text-danger ri-3x mb-2"></i>
-          <h5>Invalidez o Desmembración</h5>
-          <p>Cobertura ante discapacidad grave por accidente.</p>
+
+      <!-- Formulario -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="formulario-estandar ">
+          <h3 class="titulo-form text-center mb-3">Formulario de Contacto</h3>
+          <p class="texto-form text-center mb-4">
+            Completa tus datos para recibir una cotización personalizada según tu tipo de vivienda y ubicación.
+          </p>
+
+          <form id="form-contacto">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Juan Pérez" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="identificacion" class="form-label">Número de identificación</label>
+                <input type="text" id="identificacion" name="identificacion" class="form-control" placeholder="Ej: 1234567890" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" class="form-control" placeholder="Ej: correo@gmail.com" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono / Celular</label>
+                <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Ej: 3001234567" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" class="form-control" placeholder="Ej: Sincelejo" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="mensaje" class="form-label">Mensaje o solicitud</label>
+                <input type="text" id="mensaje" name="mensaje" class="form-control" placeholder="Ej: Deseo cotizar un servicio" required>
+              </div>
+            </div>
+
+            <div class="form-check mt-4">
+              <input class="form-check-input" type="checkbox" id="autorizacion" required>
+              <label class="form-check-label" for="autorizacion">
+                Autorizo la utilización de mis datos personales con fines comerciales.
+              </label>
+            </div>
+
+               <div class="text-center mt-4">
+              <button type="submit" class="btn">Cotizar</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="beneficio-card text-center">
-          <i class="ri-hospital-fill text-danger ri-3x mb-2"></i>
-          <h5>Enfermedades Graves</h5>
-          <p>Recibe respaldo económico si eres diagnosticado con una enfermedad cubierta.</p>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
 
-<!-- INFORMACIÓN + FORMULARIO VIDA -->
-<section class="info-form-vida py-5" data-aos="fade-up">
-  <div class="container">
-    <div class="row align-items-start g-5">
-      
-      <!-- Información Vida -->
-      <div class="col-lg-6 vida-info">
-        <h2 class="mb-4 text-danger fw-bold">¿Por qué un seguro de vida?</h2>
-        <p>Un seguro de vida no solo protege a tu familia ante lo inesperado, sino que también te permite planear con tranquilidad. En Milenio podrás escoger coberturas adaptadas a tus necesidades.</p>
-        <ul class="list-unstyled mt-4">
-          <li><i class="ri-check-line text-danger me-2"></i> Protección económica para tus seres queridos.</li>
-          <li><i class="ri-check-line text-danger me-2"></i> Coberturas por accidentes e invalidez.</li>
-          <li><i class="ri-check-line text-danger me-2"></i> Opciones de ahorro o inversión adicional.</li>
-          <li><i class="ri-check-line text-danger me-2"></i> Tranquilidad financiera ante imprevistos.</li>
-        </ul>
-      </div>
-
-      <!-- Formulario Vida -->
-      <div class="col-lg-6 cotizacion-vida">
-        <h3 class="mb-4 text-center text-danger fw-bold">Solicita tu cotización</h3>
-        <form id="formVida" class="p-4 bg-white shadow rounded">
-          <div class="mb-3">
-            <label for="nombreVida" class="form-label">Nombre completo</label>
-            <input type="text" id="nombreVida" class="form-control" required>
+  <!-- PREGUNTAS FRECUENTES VIDA -->
+  <section class="faq-vida py-5 bg-white" data-aos="fade-up">
+    <div class="container">
+      <h3 class="text-center mb-4">Preguntas frecuentes</h3>
+      <div class="accordion" id="faqVida">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVidaOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVidaOne">
+              ¿Qué cubre un seguro de vida?
+            </button>
+          </h2>
+          <div id="collapseVidaOne" class="accordion-collapse collapse show" data-bs-parent="#faqVida">
+            <div class="accordion-body">
+              Cubre fallecimiento, accidentes, invalidez, enfermedades graves y más, según la póliza contratada.
+            </div>
           </div>
+        </div>
 
-          <div class="mb-3">
-            <label for="correoVida" class="form-label">Correo electrónico</label>
-            <input type="email" id="correoVida" class="form-control" required>
-          </div>
-
-          <div class="mb-3">
-            <label for="telefonoVida" class="form-label">Teléfono</label>
-            <input type="tel" id="telefonoVida" class="form-control" required>
-          </div>
-
-          <div class="mb-3 form-check">
-            <input type="checkbox" id="acuerdoVida" class="form-check-input" required>
-            <label for="acuerdoVida" class="form-check-label">Autorizo el uso de datos según política de privacidad.</label>
-          </div>
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-danger px-5">Enviar solicitud</button>
-          </div>
-
-          <div id="alertaVida" class="alert alert-success mt-3 d-none text-center">
-            ¡Solicitud enviada! Te contactaremos pronto.
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PREGUNTAS FRECUENTES VIDA -->
-<section class="faq-vida py-5 bg-white" data-aos="fade-up">
-  <div class="container">
-    <h3 class="text-center mb-4">Preguntas frecuentes</h3>
-    <div class="accordion" id="faqVida">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingVidaOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVidaOne">
-            ¿Qué cubre un seguro de vida?
-          </button>
-        </h2>
-        <div id="collapseVidaOne" class="accordion-collapse collapse show" data-bs-parent="#faqVida">
-          <div class="accordion-body">
-            Cubre fallecimiento, accidentes, invalidez, enfermedades graves y más, según la póliza contratada.
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVidaTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVidaTwo">
+              ¿Puedo incluir un ahorro o inversión?
+            </button>
+          </h2>
+          <div id="collapseVidaTwo" class="accordion-collapse collapse" data-bs-parent="#faqVida">
+            <div class="accordion-body">
+              Sí, algunos planes de vida permiten incorporar una componente de ahorro o inversión, según tus objetivos.
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingVidaTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVidaTwo">
-            ¿Puedo incluir un ahorro o inversión?
-          </button>
-        </h2>
-        <div id="collapseVidaTwo" class="accordion-collapse collapse" data-bs-parent="#faqVida">
-          <div class="accordion-body">
-            Sí, algunos planes de vida permiten incorporar una componente de ahorro o inversión, según tus objetivos.
-          </div>
-        </div>
+    </div>
+  </section>
+
+  <!-- ALIADOS VIDA -->
+  <section class="aliados-vida py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h3 class="mb-4">Aliados aseguradores</h3>
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+        <img src="../../img/aliado1.png" alt="Aliado 1" class="img-fluid" style="max-width: 100px;">
+        <img src="../../img/aliado2.png" alt="Aliado 2" class="img-fluid" style="max-width: 100px;">
+        <img src="../../img/aliado3.png" alt="Aliado 3" class="img-fluid" style="max-width: 100px;">
       </div>
-      <!-- más preguntas -->
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ALIADOS VIDA -->
-<section class="aliados-vida py-5 bg-light" data-aos="fade-up">
-  <div class="container text-center">
-    <h3 class="mb-4">Aliados aseguradores</h3>
-    <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
-      <img src="../../img/aliado1.png" alt="Aliado 1" class="img-fluid" style="max-width: 100px;">
-      <img src="../../img/aliado2.png" alt="Aliado 2" class="img-fluid" style="max-width: 100px;">
-      <img src="../../img/aliado3.png" alt="Aliado 3" class="img-fluid" style="max-width: 100px;">
-      <!-- más logos -->
-    </div>
-  </div>
-</section>
-
-
-<!-- FOOTER -->
+  <!-- FOOTER -->
   <footer class="py-4" data-aos="fade-up">
     <div class="container d-flex flex-wrap justify-content-between">
-      
-      <!-- Columna 1: Logo + descripción -->
+
+      <!-- Columna 1 -->
       <div class="col-md-4 mb-3 text-center text-md-start">
         <img src="../../img/Logos/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3">
         <h2>MILENIO LTDA ASESORES DE SEGUROS</h2>
@@ -209,7 +258,7 @@
         </div>
       </div>
 
-      <!-- Columna 2: Enlaces rápidos -->
+      <!-- Columna 2 -->
       <div class="col-md-4 mb-3">
         <p class="fw-bold">Enlaces rápidos</p>
         <a href="#">Inicio</a><br>
@@ -218,22 +267,19 @@
         <a href="#">Contáctanos</a>
       </div>
 
-      <!-- Columna 3: Contacto + Botón Google Maps -->
+      <!-- Columna 3 -->
       <div class="col-md-4 mb-3">
         <p class="fw-bold">Contáctanos</p>
         <p>Teléfono: +57 605 2823408</p>
         <p>Correo: contacto@milenioseguros.com</p>
         <p>Dirección: Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</p>
-
-        <!-- Botón Google Maps -->
         <div class="mt-3">
-          <a href="https://www.google.com/maps?q=Cr17+24+-+39+Cl+Nariño+Sincelejo+Sucre" 
-             target="_blank" 
-             class="btn-maps">
+          <a href="https://www.google.com/maps?q=Cr17+24+-+39+Cl+Nariño+Sincelejo+Sucre" target="_blank" class="btn-maps">
             <i class="ri-map-pin-2-fill"></i> Ver ubicación en Google Maps
           </a>
         </div>
       </div>
+
     </div>
 
     <div class="text-center border-top pt-3 mt-3">
@@ -244,8 +290,7 @@
   <!-- WhatsApp -->
   <a href="https://wa.me/3116166922?text=Hola,%20quiero%20más%20información%20sobre%20sus%20seguros"
      class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-         alt="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
   <!-- Scripts -->
@@ -254,7 +299,6 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Toggle menú hamburguesa
     const toggleBtn = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
@@ -262,7 +306,6 @@
       navLinks.classList.toggle("active");
     });
 
-    // Cierra menú al hacer clic en un enlace
     document.querySelectorAll(".nav-links a").forEach(link => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");

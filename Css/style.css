@@ -225,7 +225,7 @@ header {
 }
 .siniestro h2 { font-weight:700; color:#fff; }
 
-/* ===================== ASEGURADORAS & CONTACTO ===================== */
+/* ===================== SECCIÓN CONTACTO ===================== */
 .info-section {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -235,16 +235,18 @@ header {
   align-items: start;
 }
 
-/* ASEGURADORAS */
+/* ---------- ASEGURADORAS ---------- */
 .aseguradoras {
   text-align: center;
 }
+
 .aseguradoras h2 {
   font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 25px;
   color: #333;
 }
+
 .logos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -252,6 +254,7 @@ header {
   align-items: center;
   justify-items: center;
 }
+
 .logos-grid img {
   max-height: 80px;
   width: auto;
@@ -259,75 +262,105 @@ header {
   transition: transform 0.3s ease, filter 0.3s ease;
   filter: grayscale(40%);
 }
+
 .logos-grid img:hover {
   transform: scale(1.1);
   filter: grayscale(0%);
 }
 
-/* CONTACTO */
-.contacto {
-  text-align: left;
-}
-.contacto h2 {
-  color: #c8102e;
-  font-weight: 700;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-.contacto p {
-  margin-bottom: 20px;
-  color: #555;
-}
-.contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.contacto input,
-.contacto textarea {
-  padding: 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-.contacto input:focus,
-.contacto textarea:focus {
-  border-color: #c8102e;
-}
-.contacto textarea {
-  resize: none;
-  min-height: 120px;
-}
-.contacto button {
-  background: #c8102e;
-  color: #fff;
-  border: none;
-  padding: 14px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-.contacto button:hover {
-  background: #a50d23;
-  transform: scale(1.05);
+/* ---------- FORMULARIO ESTANDAR ---------- */
+.formulario-estandar {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
-/* RESPONSIVE ASEGURADORAS/CONTACTO */
+.formulario-estandar:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.formulario-estandar .titulo-form {
+  color: #c8102e;
+  font-weight: 700;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formulario-estandar .texto-form {
+  color: #555;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.formulario-estandar label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.formulario-estandar .form-control {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.formulario-estandar .form-control:focus {
+  border-color: #c8102e;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.15);
+}
+
+.formulario-estandar .form-check-label {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.formulario-estandar .btn {
+  background: linear-gradient(135deg, #c8102e, #a50d23);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 50%;
+  transition: all 0.3s ease;
+}
+
+.formulario-estandar .btn:hover {
+  background: linear-gradient(135deg, #a50d23, #c8102e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(200, 16, 46, 0.3);
+}
+
+/* Fondo para formularios empresariales */
+.fondo-empresa {
+  border: 2px solid rgba(200, 16, 46, 0.15);
+  background: linear-gradient(135deg, #fff, #fef2f3);
+}
+
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 992px) {
   .info-section {
     grid-template-columns: 1fr;
     padding: 50px 20px;
     gap: 40px;
   }
-  .aseguradoras h2 {
-    margin-top: 20px;
-  }
+
   .logos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .formulario-estandar .btn {
+    width: 100%;
+  }
 }
+
+
 
 /* ===================== FOOTER ===================== */
 footer { 
@@ -576,3 +609,4 @@ footer a:hover { color: #dc3545; }
     height: 180px;
   }
 }
+

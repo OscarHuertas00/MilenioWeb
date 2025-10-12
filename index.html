@@ -202,43 +202,72 @@
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="py-5">
-    <div class="container">
-      <div class="row align-items-center">
+<section id="contacto" class="info-section py-5">
 
-        <!-- FORMULARIO -->
-        <div class="col-md-6 mb-4" data-aos="fade-right">
-          <h2 class="text-danger">Contáctanos</h2>
-          <p>Déjanos tus datos y un asesor se comunicará contigo.</p>
-          <form>
-            <input type="text" class="form-control mb-3" placeholder="Tu Nombre" required>
-            <input type="email" class="form-control mb-3" placeholder="Tu Correo" required>
-            <input type="tel" class="form-control mb-3" placeholder="Tu Teléfono">
-            <textarea class="form-control mb-3" placeholder="Escribe tu mensaje..." required></textarea>
-            <button type="submit" class="btn btn-danger w-100">Enviar Mensaje</button>
-          </form>
+  <!-- FORMULARIO -->
+  <div class="formulario-estandar fondo-empresa">
+    <h2 class="titulo-form">Contáctanos</h2>
+    <p class="texto-form">Déjanos tus datos y te responderemos lo antes posible.</p>
+    <form>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label>Nombre completo</label>
+          <input type="text" class="form-control" placeholder="Ej: Juan Pérez" required>
         </div>
-
-        <!-- ASEGURADORAS -->
-        <div class="col-md-6" data-aos="fade-left">
-          <h2 class="text-center mb-4">Aseguradoras aliadas</h2>
-          <div class="logos-grid">    
-            <img src="./img/Compañias_alidas/axa_colpatria.png" alt="AXA Colpatria">
-            <img src="./img/Compañias_alidas/bolivar.png" alt="Seguros Bolívar">
-            <img src="./img/Compañias_alidas/HDI.png" alt="HDI Seguros">
-            <img src="./img/Compañias_alidas/MAPREE.png" alt="Mapfre">
-            <img src="./img/Compañias_alidas/mundial.png" alt="Seguros Mundial">
-            <img src="./img/Compañias_alidas/Positiva.png" alt="Positiva Seguros">
-            <img src="./img/Compañias_alidas/Previstora.png" alt="Previsora Seguros">
-            <img src="./img/Compañias_alidas/surapng.png" alt="Sura">
-            <img src="./img/Compañias_alidas/solidaria2.png" alt="Solidaria">
-            <img src="./img/Compañias_alidas/segurosdevidadelestado.png" alt="Seguros de Vida del Estado">
-          </div>
+        <div class="col-md-6">
+          <label>Número de identificación</label>
+          <input type="text" class="form-control" placeholder="Ej: 1234567890" required>
         </div>
-
+        <div class="col-md-6">
+          <label>Correo electrónico</label>
+          <input type="email" class="form-control" placeholder="Ej: correo@gmail.com" required>
+        </div>
+        <div class="col-md-6">
+          <label>Teléfono / Celular</label>
+          <input type="tel" class="form-control" placeholder="Ej: 3001234567" required>
+        </div>
+        <div class="col-md-6">
+          <label>Ciudad</label>
+          <input type="text" class="form-control" placeholder="Ej: Sincelejo" required>
+        </div>
+        <div class="col-md-6">
+          <label>Mensaje o solicitud</label>
+          <input type="text" class="form-control" placeholder="Ej: Deseo cotizar un servicio" required>
+        </div>
       </div>
+
+      <div class="form-check mt-4">
+        <input class="form-check-input" type="checkbox" id="autorizacion" required>
+        <label class="form-check-label" for="autorizacion">
+          Autorizo la utilización de mis datos personales con fines comerciales.
+        </label>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn">Cotizar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ASEGURADORAS -->
+  <div class="aseguradoras" data-aos="fade-left">
+    <h2>Aseguradoras aliadas</h2>
+    <div class="logos-grid">
+      <img src="./img/Compañias_alidas/axa_colpatria.png" alt="AXA Colpatria">
+      <img src="./img/Compañias_alidas/bolivar.png" alt="Seguros Bolívar">
+      <img src="./img/Compañias_alidas/HDI.png" alt="HDI Seguros">
+      <img src="./img/Compañias_alidas/MAPREE.png" alt="Mapfre">
+      <img src="./img/Compañias_alidas/mundial.png" alt="Seguros Mundial">
+      <img src="./img/Compañias_alidas/Positiva.png" alt="Positiva Seguros">
+      <img src="./img/Compañias_alidas/Previstora.png" alt="Previsora Seguros">
+      <img src="./img/Compañias_alidas/surapng.png" alt="Sura">
+      <img src="./img/Compañias_alidas/solidaria2.png" alt="Solidaria">
+      <img src="./img/Compañias_alidas/segurosdevidadelestado.png" alt="Seguros de Vida del Estado">
     </div>
-  </section>
+  </div>
+
+</section>
+
 
   <!-- FOOTER -->
   <footer class="py-4" data-aos="fade-up">

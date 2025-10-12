@@ -54,57 +54,107 @@
     </div>
   </section>
 
-  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
-  <section class="service-contenido py-5">
-    <div class="container">
-      <div class="row align-items-start g-5">
+ <section class="service-contenido py-5">
+  <div class="container">
+    <div class="row align-items-start g-5">
 
-        <!-- Columna izquierda -->
-        <div class="col-lg-6" data-aos="fade-right">
-          <div class="service-coberturas mb-5">
-            <h2><i class="ri-shield-check-line text-danger"></i> Coberturas</h2>
-            <ul class="list-unstyled mt-3">
-              <li><i class="ri-car-line text-danger"></i> Daños al vehículo por accidente o vandalismo.</li>
-              <li><i class="ri-fire-line text-danger"></i> Pérdida total o parcial por incendio o robo.</li>
-              <li><i class="ri-user-heart-line text-danger"></i> Responsabilidad civil frente a terceros.</li>
-              <li><i class="ri-hospital-line text-danger"></i> Asistencia médica y jurídica 24/7.</li>
-              <li><i class="ri-truck-line text-danger"></i> Servicio de grúa a nivel nacional.</li>
-            </ul>
-          </div>
+      <!-- Columna izquierda: información -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <p class="reseña mb-4">
+          En Milenio Seguros, entendemos que la confianza es fundamental. Por eso garantizamos la
+          protección de tus datos y ofrecemos beneficios reales que respaldan tu tranquilidad.
+        </p>
 
-          <div class="service-beneficios">
-            <h2><i class="ri-gift-line text-danger"></i> Beneficios</h2>
-            <ul class="list-unstyled mt-3">
-              <li><i class="ri-thumb-up-line text-danger"></i> Descuentos por buen historial de conducción.</li>
-              <li><i class="ri-tools-line text-danger"></i> Talleres aliados certificados.</li>
-              <li><i class="ri-global-line text-danger"></i> Cobertura nacional e internacional.</li>
-              <li><i class="ri-headphone-line text-danger"></i> Asistencia personalizada 24 horas.</li>
-            </ul>
-          </div>
+        <div class="service-coberturas mb-5">
+          <h2><i class="ri-user-heart-line text-danger"></i> Protección y Confianza</h2>
+          <ul class="list-unstyled mt-3">
+            <li><i class="ri-shield-check-line text-danger"></i> Garantizamos la seguridad de tus datos personales.</li>
+            <li><i class="ri-file-lock-line text-danger"></i> Cumplimos con la Ley 1581 de 2012 y normas de habeas data.</li>
+            <li><i class="ri-user-settings-line text-danger"></i> Tu información será utilizada solo con fines autorizados.</li>
+            <li><i class="ri-hand-heart-line text-danger"></i> Transparencia en el tratamiento de la información.</li>
+            <li><i class="ri-global-line text-danger"></i> Política clara de privacidad y confidencialidad.</li>
+          </ul>
         </div>
 
-        <!-- Columna derecha: formulario -->
-        <div class="col-lg-6" id="formulario" data-aos="fade-left">
-          <div class="cotizacion shadow p-4 bg-white rounded">
-            <h2 class="mb-4 text-center"><i class="ri-file-list-3-line text-danger"></i> Cotiza tu seguro</h2>
-            <form>
-              <div class="mb-3"><input type="text" class="form-control" placeholder="Nombre completo" required /></div>
-              <div class="mb-3"><input type="email" class="form-control" placeholder="Correo electrónico" required /></div>
-              <div class="mb-3"><input type="tel" class="form-control" placeholder="Número de celular" required /></div>
-              <div class="mb-3"><input type="text" class="form-control" placeholder="Placa del vehículo" required /></div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="autorizo" required />
-                <label class="form-check-label" for="autorizo">
-                  Autorizo el uso de mi información según la <a href="#">política de privacidad</a>.
-                </label>
-              </div>
-              <button type="submit" class="btn btn-danger w-100 py-2">Enviar Cotización</button>
-            </form>
-          </div>
+        <div class="service-beneficios">
+          <h2><i class="ri-gift-line text-danger"></i> Beneficios</h2>
+          <ul class="list-unstyled mt-3">
+            <li><i class="ri-shield-keyhole-line text-danger"></i> Protección integral de tu identidad.</li>
+            <li><i class="ri-lock-line text-danger"></i> Datos almacenados de forma segura.</li>
+            <li><i class="ri-user-smile-line text-danger"></i> Atención personalizada para solicitudes.</li>
+            <li><i class="ri-check-double-line text-danger"></i> Cumplimiento normativo garantizado.</li>
+          </ul>
         </div>
       </div>
+
+      <!-- Columna derecha: formulario y reseña -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="formulario-estandar fondo-empresa">
+          <h2 class="titulo-form">Contáctanos</h2>
+          <p class="texto-form">Déjanos tus datos y te responderemos lo antes posible.</p>
+
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Nombre completo</label>
+                <input type="text" class="form-control" placeholder="Ej: Juan Pérez" required>
+              </div>
+
+              <div class="col-md-6">
+                <label>Número de identificación</label>
+                <input type="text" class="form-control" placeholder="Ej: 1234567890" required>
+              </div>
+
+              <div class="col-md-6">
+                <label>Correo electrónico</label>
+                <input type="email" class="form-control" placeholder="Ej: correo@gmail.com" required>
+              </div>
+
+              <div class="col-md-6">
+                <label>Teléfono / Celular</label>
+                <input type="tel" class="form-control" placeholder="Ej: 3001234567" required>
+              </div>
+
+              <div class="col-md-6">
+                <label>Ciudad</label>
+                <input type="text" class="form-control" placeholder="Ej: Sincelejo" required>
+              </div>
+
+              <div class="col-md-6">
+                <label>Mensaje o solicitud</label>
+                <input type="text" class="form-control" placeholder="Ej: Deseo cotizar un servicio" required>
+              </div>
+            </div>
+
+            <div class="form-check mt-4">
+              <input class="form-check-input" type="checkbox" id="autorizacion" required>
+              <label class="form-check-label" for="autorizacion">
+                Autorizo la utilización de mis datos personales con fines comerciales.
+              </label>
+            </div>
+
+            <div class="text-center mt-4">
+              <button type="submit" class="btn">Cotizar</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Reseña al lado del formulario -->
+        <div class="reseña-form mt-4 p-4 bg-light border rounded shadow-sm">
+          <i class="ri-chat-quote-line text-danger display-6 mb-2"></i>
+          <p class="mb-0">
+            “Contraté mi seguro con Milenio y fue una experiencia excelente. La atención fue rápida y el
+            proceso muy claro. Me siento realmente protegido.”<br>
+            <strong>— Carlos M., Cliente satisfecho</strong>
+          </p>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- ===================== BENEFICIOS ===================== -->
   <section class="beneficios py-5 text-center">
