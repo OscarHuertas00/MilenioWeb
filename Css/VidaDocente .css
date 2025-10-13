@@ -5,221 +5,182 @@ body {
   padding:0;
   overflow-x:hidden;
   color:#333;
+  background:#f8f9fa;
+  padding-top:140px; /* 🔥 Espacio para header fijo */
 }
-a { text-decoration:none; }
+a { text-decoration:none; transition:0.3s; }
+h1,h2,h3,h4 { font-weight:700; }
+
+/* ===================== TOPBAR ===================== */
+.topbar { 
+  background:#c8102e; 
+  color:white; 
+  font-size:0.9rem; 
+  padding:8px 0; 
+}
+.topbar span { margin-right:20px; }
 
 /* ===================== HEADER ===================== */
-.site-header {
-  position:sticky;
-  top:0;
+header { 
+  background:white; 
+  box-shadow:0 2px 6px rgba(0,0,0,0.1); 
+  position:fixed;   
+  top:0;            
+  left:0;
+  width:100%;
   z-index:1000;
-  background:#fff;
-  transition:all 0.3s ease;
-}
-.site-header.scrolled {
-  background:#fff;
-  box-shadow:0 2px 10px rgba(0,0,0,0.15);
-}
-
-/* ===================== LOGO ===================== */
-.logo img { 
-  height:100px !important;   /* logo más grande */
-  max-height:120px;          /* límite */
-  transition:transform 0.3s ease;
-}
-.logo img:hover { transform:scale(1.08); }
-
-/* ===================== NAV ===================== */
-.nav-links {
   display:flex;
+  justify-content:space-between;
   align-items:center;
-  gap:20px;
-  transition:all 0.3s ease;
+  padding:10px 20px;
 }
-.nav-links a {
-  color:#333;
-  font-weight:500;
-  padding:6px 12px;
-  border-radius:20px;
-  transition:all 0.3s ease;
-}
-.nav-links a:hover {
-  background:#b71c1c;
-  color:#fff;
-}
-.btn-ayuda {
-  border:1px solid #b71c1c;
-  border-radius:30px;
-  padding:6px 18px;
-  color:#b71c1c !important;
-  font-weight:600;
-}
-.btn-ayuda:hover {
-  background:#b71c1c;
-  color:#fff !important;
+.logo img { 
+  max-height:120px; 
+  width:auto; 
 }
 
 /* ===================== MENÚ HAMBURGUESA ===================== */
 .menu-toggle {
-  display:none;
-  cursor:pointer;
-  background:none;
-  border:none;
-  outline:none;
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 1002;
 }
 .menu-toggle span {
-  display:block;
-  width:28px;
-  height:3px;
-  background:#b71c1c;
-  margin:6px auto;
-  transition:all 0.3s ease;
-  border-radius:2px;
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #c8102e;
+  margin: 6px auto;
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
-.menu-toggle.active span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
-.menu-toggle.active span:nth-child(2) { opacity:0; }
-.menu-toggle.active span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
-@media(max-width:768px){
-  .menu-toggle { display:block; }
+/* ===================== NAV ===================== */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.nav-links a {
+  color:#333;
+  margin:0 12px;
+  font-weight:500;
+  text-decoration:none;
+  padding:6px 12px;
+  border-radius:20px;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover {
+  background:#c8102e;
+  color:#fff;
+}
+.nav-links a.active {
+  background:#c8102e;
+  color:#fff;
+}
+.btn-ayuda {
+  border:1px solid #c8102e;
+  border-radius:30px;
+  padding:6px 18px;
+  color:#c8102e !important;
+  font-weight:600;
+}
+.btn-ayuda:hover {
+  background:#c8102e;
+  color:white !important;
+}
+
+/* ===================== RESPONSIVE NAV ===================== */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
   .nav-links {
-    display:none;
-    flex-direction:column;
-    background:#fff;
-    position:absolute;
-    top:100%;
-    right:0;
-    width:220px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.15);
-    border-radius:0 0 0 8px;
-    padding:1rem;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-radius: 0 0 0 8px;
+    padding: 1rem;
+    z-index: 1001;
   }
-  .nav-links.active { display:flex; }
-  .nav-links a { margin:10px 0; }
+  .nav-links.active { display: flex; }
+  .nav-links a {
+    margin: 10px 0;
+    color:#333;
+  }
 }
 
-/* ===================== HERO ===================== */
-.hero {
-  position:relative;
-  text-align:left;
-  background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero.jpg') center/cover no-repeat;
-  color:#fff;
-  padding:120px 20px;
+/* ===================== SECCIÓN NOSOTROS ===================== */
+.nosotros h1 {
+  font-size:2.5rem;
+  color:#c8102e;
 }
-.hero h1 {
-  font-size:3rem;
-  font-weight:800;
-  color:#fff;
-  text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+.nosotros p {
+  font-size:1.05rem;
+  line-height:1.7;
 }
-.hero h3 {
-  font-size:1.5rem;
-  color:#f5f5f5;
+.nosotros h3 {
+  color:#111;
+  margin-bottom:15px;
 }
-.hero p {
-  font-size:1.1rem;
-  line-height:1.6;
-  max-width:600px;
+.nosotros h4 {
+  color:#c8102e;
+  margin-top:20px;
+  margin-bottom:10px;
 }
-.hero .btn {
-  border-radius:30px;
-  font-weight:600;
-  background:#b71c1c;
-  color:#fff;
-  transition:all 0.3s ease;
+.nosotros ul {
+  list-style:none;
+  padding:0;
 }
-.hero .btn:hover {
-  background:#900d0d;
-  transform:scale(1.05);
-}
-
-/* ===================== FORMULARIO ===================== */
-.formulario {
-  border-radius:15px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.15);
-  padding:30px;
-  background:#fff;
-  margin-top:50px;
-}
-.formulario input,
-.formulario select {
-  border-radius:8px;
-  border:1px solid #ccc;
-  padding:10px;
-}
-.formulario button {
-  border-radius:8px;
-  font-weight:700;
-  background:#b71c1c;
-  color:#fff;
-  border:none;
-  padding:10px 20px;
-  transition:all 0.3s ease;
-}
-.formulario button:hover {
-  background:#900d0d;
-  transform:translateY(-2px);
-}
-
-/* ===================== BENEFICIOS ===================== */
-section h2 {
-  color:#b71c1c;
-  font-weight:700;
-  text-align:center;
-  margin-bottom:30px;
-}
-.list-group-item {
+.nosotros ul li {
+  margin-bottom:8px;
   font-size:1rem;
-  padding:12px 16px;
-  transition:all 0.3s ease;
-}
-.list-group-item:hover {
-  background:#f8d7da;
-  transform:translateX(5px);
-}
-
-/* ===================== CTA FINAL ===================== */
-.bg-danger {
-  background:#b71c1c !important;
-  color:#fff;
-  padding:40px 20px;
-  text-align:center;
-}
-.bg-danger h3 {
-  font-weight:700;
-}
-.bg-danger .btn {
-  border-radius:30px;
-  font-weight:600;
-  background:#fff;
-  color:#b71c1c;
-  border:none;
-  padding:10px 25px;
-  transition:all 0.3s ease;
-}
-.bg-danger .btn:hover {
-  background:#f5f5f5;
-  transform:scale(1.05);
+  color:#444;
 }
 
 /* ===================== FOOTER ===================== */
-footer {
-  background:#111;
-  color:#fff;
-  padding:40px 20px;
-  text-align:center;
+footer { 
+  background: #111;  
+  color: #fff;       
+  font-size: 0.9rem;
+  padding: 40px 20px;
 }
-.footer-logo {
-  height:70px !important;
-  margin-bottom:10px;
+footer h2, footer h5 { font-size: 1.2rem; font-weight:700; }
+footer a { color: #fff; text-decoration: none; }
+footer a:hover { color: #dc3545; }
+.partner-logo { max-height: 50px; opacity: 0.8; transition: 0.3s; }
+.partner-logo:hover { opacity: 1; }
+.footer-logo { max-width: 120px; height: auto; }
+.footer-logo + h2 { font-size: 1.2rem; }
+.social-links a { font-size: 1.5rem; margin-right: 10px; color: #fff; }
+.social-links a:hover { color: #dc3545; }
+.btn-maps {
+  display: inline-block;
+  background: #dc3545;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
-footer p { margin-bottom:6px; }
-footer a {
-  color:#fff;
-  text-decoration:none;
-  transition:color 0.3s ease;
-}
-footer a:hover { color:#b71c1c; }
+.btn-maps:hover { background: #b02a37; }
 
 /* ===================== WHATSAPP FLOAT ===================== */
 .whatsapp-float {
@@ -228,8 +189,8 @@ footer a:hover { color:#b71c1c; }
   right:20px;
   background:#25D366;
   border-radius:50%;
-  width:70px;
-  height:70px;
+  width:65px;
+  height:65px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -239,34 +200,238 @@ footer a:hover { color:#b71c1c; }
   animation:bounce 3s infinite;
 }
 .whatsapp-float:hover { transform:scale(1.1); }
+.whatsapp-float img { width:35px; height:35px; }
 @keyframes bounce {
-  0%,100% { transform:translateY(0); }
+  0%, 100% { transform:translateY(0); }
   50% { transform:translateY(-5px); }
 }
 
-/* ===================== ANIMACIONES SCROLL ===================== */
-.fade-element {
-  opacity:0;
-  transform:translateY(30px);
-  transition:all 0.8s ease-out;
-}
-.fade-element.visible {
-  opacity:1;
-  transform:translateY(0);
+/* ===================== HERO VIDA DOCENTE ===================== */
+.hero-vida-docente {
+  position: relative;
+  min-height: 75vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../img/Sample6.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 80px 0;
 }
 
-/* ===================== RESPONSIVE ===================== */
-@media(max-width:992px){
-  .hero h1 { font-size:2.4rem; }
-  .hero h3 { font-size:1.2rem; }
-  .hero p { font-size:1rem; }
+.text-primario {
+  color: #c8102e;
 }
-@media(max-width:768px){
-  .hero { text-align:center; }
-  .hero p { margin:0 auto; }
-  .formulario { padding:20px; }
+
+/* ==== Logo SURA ==== */
+.logo-sura {
+  height: 45px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
-@media(max-width:576px){
-  .hero h1 { font-size:1.8rem; }
-  .whatsapp-float { width:60px; height:60px; }
+
+/* ==== Texto izquierda ==== */
+.hero-vida-docente h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.hero-vida-docente p {
+  font-size: 1.05rem;
+  color: #e8e8e8;
+}
+
+/* ==== Beneficios ==== */
+.beneficios {
+  margin-top: 25px;
+}
+
+.beneficio-item {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.beneficio-item i {
+  font-size: 1.8rem;
+  color: #c8102e;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.beneficio-item h5 {
+  margin-bottom: 3px;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.beneficio-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* ==== Formulario ==== */
+.formulario-contacto {
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.btn-primario {
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-primario:hover {
+  background: #a50d25;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 992px) {
+  .hero-vida-docente {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .titulo-logo {
+    flex-direction: column;
+  }
+
+  .logo-sura {
+    height: 40px;
+    filter: brightness(1) invert(0);
+  }
+
+  .formulario-contacto {
+    margin-top: 30px;
+  }
+}
+
+/* ===================== INFO VIDA DOCENTE ===================== */
+.info-vida-docente {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.info-vida-docente h2 {
+  font-size: 2rem;
+  color: #111;
+}
+
+.info-vida-docente p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Lista de beneficios */
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-beneficios li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.lista-beneficios i {
+  font-size: 1.8rem;
+  color: #c8102e;
+  background: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.lista-beneficios h5 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.lista-beneficios p {
+  margin: 2px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.info-vida-docente .btn-primario {
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s;
+  padding: 10px 25px;
+  border: none;
+}
+
+.info-vida-docente .btn-primario:hover {
+  background: #a50d25;
+}
+
+/* Imagen */
+.info-vida-docente img {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .info-vida-docente {
+    text-align: center;
+  }
+  .lista-beneficios li {
+    justify-content: center;
+    text-align: left;
+  }
+}
+.slash-reclamaciones {
+  background: linear-gradient(90deg, #c8102e 0%, #9b0e25 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.slash-reclamaciones::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 120%;
+  height: 100%;
+  transform: skewY(-3deg);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.slash-reclamaciones h2,
+.slash-reclamaciones p {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.slash-reclamaciones .btn {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #c8102e;
+  border: none;
+}
+
+.slash-reclamaciones .btn:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-2px);
 }

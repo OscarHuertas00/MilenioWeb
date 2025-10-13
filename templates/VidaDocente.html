@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plan Vida Docente | Milenio Seguros</title>
+  <title>Vida docente</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,233 +14,463 @@
   <!-- Iconos Remix -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- CSS Global -->
+  <!-- AOS Animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Tus estilos -->
   <link rel="stylesheet" href="../Css/VidaDocente .css">
+  <link rel="stylesheet" href="../Css/Responsive.css">
 </head>
-<body style="font-family:'Lato', sans-serif;">
+<body>
 
-  <!-- ===================== HEADER ===================== -->
-  <header class="site-header py-2 shadow-sm bg-white">
-    <div class="container d-flex justify-content-between align-items-center">
-      <!-- Logo -->
-      <div class="logo">
-        <img src="../img/Logos/milenio.png" alt="Milenio Seguros" style="height:50px;">
-      </div>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container d-flex flex-wrap justify-content-center justify-content-md-start">
+      <span><i class="ri-phone-fill"></i> (+57) 6052823408</span>
+      <span><i class="ri-time-fill"></i> Lunes - Viernes: 8:00 - 18:00</span>
+      <span><i class="ri-map-pin-2-fill"></i> Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</span>
+    </div>
+  </div>
 
-      <!-- Botón menú hamburguesa -->
-      <button class="menu-toggle d-md-none" id="menu-toggle">
-        <span></span><span></span><span></span>
-      </button>
+  <!-- HEADER -->
+<header class="site-header py-2" data-aos="fade-down">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../img/Logos/milenio.png" alt="Milenio Seguros">
+    </div>
 
-      <!-- Navegación -->
-      <nav class="nav-links">
-       <a href="../index.html">Inicio</a>
-      <a href="">Pesonas</a>
-      <a href="">Empresa</a>
+    <!-- Botón hamburguesa (solo en móvil) -->
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span> 
+    </button>
+
+    <!-- Menú -->
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="#servicios">Personas</a>
+      <a href="#servicios">Empresas</a>
       <a href="Milenio.html">Nosotros</a>
-      <a href="Aliados.html">Aliados</a>
+      <a href="Aliados.html">Aliadados</a>
       <a href="VidaDocente.html">Plan Vida docente</a>
       <a href="Contacto.html">Contacto</a>
-      <a href="Ayuda.html" class="btn-ayuda">¿Ayuda?</a>
-      </nav>
-    </div>
-  </header>
+      <a href="VidaDocente.html" class="btn-ayuda">¿Ayuda?</a>
+    </nav>
+  </div>
+</header>
+<!-- ===================== HERO VIDA DOCENTE ===================== -->
+<section class="hero-vida-docente">
+  <div class="container">
+    <div class="row align-items-center">
 
-<!-- ===================== HERO ===================== -->
-  <section class="hero text-white d-flex align-items-center" 
-           style="background: linear-gradient(rgba(183,28,28,0.85), rgba(183,28,28,0.85)), 
-                  url('../img/Sample7.webp') center/cover no-repeat; 
-                  min-height:90vh;">
-    <div class="container">
-      <div class="row align-items-center">
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="col-lg-6 mb-4 mb-lg-0 contenido-texto" data-aos="fade-right">
+        <div class="titulo-logo d-flex align-items-center gap-3 mb-3">
+          <h1 class="fw-bold m-0">
+            Protege lo que más valoras con el <span class="text-primario">Plan Vida Docente</span>
+          </h1>
+          <img src="../img/Compañias_alidas/surapng.png" alt="Logo SURA" class="logo-sura">
+        </div>
 
-        <!-- TEXTO -->
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <h1 class="fw-bold display-4 mb-3">Plan Vida Docente</h1>
-          <div class="d-flex align-items-center mb-4">
-            <h3 class="fw-normal me-3">Protección para ti y tu familia</h3>
-            <img src="../img/Compañias_alidas/surapng.png" alt="SURA" style="height:70px; max-width:150px;">
+        <p class="mb-4">
+          En <strong>Milenio Seguros</strong>, entendemos el compromiso y la entrega de cada docente. 
+          Por eso creamos un plan de vida diseñado para ofrecerte respaldo económico, tranquilidad 
+          y seguridad para ti y tu familia, con el respaldo de <strong>SURA</strong>, una de las compañías 
+          más confiables en el sector asegurador.
+        </p>
+
+        <div class="beneficios">
+          <div class="beneficio-item">
+            <i class="ri-shield-check-line"></i>
+            <div>
+              <h5>Respaldo inmediato</h5>
+              <p>Tu familia recibe apoyo económico ágil en caso de eventualidad o fallecimiento.</p>
+            </div>
           </div>
 
-          <p class="lead">
-            Un seguro <strong>diseñado especialmente para docentes</strong>, con respaldo inmediato, beneficios únicos y la confianza de SURA.
+          <div class="beneficio-item">
+            <i class="ri-team-line"></i>
+            <div>
+              <h5>Protección familiar</h5>
+              <p>Cubre al docente titular y a su grupo familiar directo con múltiples beneficios.</p>
+            </div>
+          </div>
+
+          <div class="beneficio-item">
+            <i class="ri-heart-2-line"></i>
+            <div>
+              <h5>Atención personalizada</h5>
+              <p>Recibe acompañamiento de asesores expertos las 24 horas, todos los días del año.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="col-lg-5 offset-lg-1" data-aos="fade-left">
+        <div class="formulario-contacto bg-white text-dark p-4 rounded-4 shadow">
+          <h3 class="text-center text-primario mb-2 fw-bold">Contáctanos</h3>
+          <p class="text-center text-muted mb-4">
+            Déjanos tus datos y un asesor se comunicará contigo para brindarte toda la información.
           </p>
 
-          <!-- Botones -->
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="#formulario" class="btn btn-light btn-lg px-4">Cotiza tu plan</a>
-            <a href="https://wa.me/3116166922?text=Hola,%20quiero%20más%20información" target="_blank" 
-               class="btn btn-outline-light btn-lg px-4">
-              <i class="ri-whatsapp-line me-2"></i>Hablar por WhatsApp
-            </a>
-          </div>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre completo">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Identificación">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Correo electrónico">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Teléfono / Celular">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Ciudad">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Mensaje o solicitud">
+              </div>
+            </div>
 
-          <p class="small mt-3">Más de <strong>500 familias docentes</strong> ya confían en este plan.</p>
-        </div>
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" id="autorizacion">
+              <label class="form-check-label small" for="autorizacion">
+                Autorizo la utilización de mis datos personales con fines comerciales.
+              </label>
+            </div>
 
-        <!-- FORMULARIO -->
-        <div class="col-lg-5 offset-lg-1" id="formulario">
-          <div class="formulario bg-white p-5 rounded shadow-lg">
-            <h3 class="mb-4 text-center text-dark">Solicita más información</h3>
-            <form action="/procesar" method="POST">
-              <div class="mb-3">
-                <input type="text" class="form-control form-control-lg" name="nombre" placeholder="Nombre completo*" required>
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control form-control-lg" name="email" placeholder="Correo electrónico*" required>
-              </div>
-              <div class="mb-3">
-                <input type="tel" class="form-control form-control-lg" name="telefono" placeholder="Teléfono*" required>
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control form-control-lg" name="ciudad" placeholder="Ciudad*" required>
-              </div>
-              <div class="mb-3">
-                <select class="form-select form-select-lg" name="interes" required>
-                  <option value="">Selecciona tu interés</option>
-                  <option value="vida">Seguro de Vida</option>
-                  <option value="salud">Seguro de Salud</option>
-                  <option value="otros">Otros</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-danger btn-lg w-100 mt-3">
-                Quiero más información
-              </button>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== BENEFICIOS ===================== -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">¿Por qué elegir Plan Vida Docente?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <i class="ri-shield-check-line display-4 text-danger mb-3"></i>
-          <h5>Respaldo inmediato</h5>
-          <p>Tu familia recibe apoyo económico ágil en caso de eventualidad.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="ri-team-line display-4 text-danger mb-3"></i>
-          <h5>Protección familiar</h5>
-          <p>Cubre no solo al docente, también a su grupo familiar cercano.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="ri-book-marked-line display-4 text-danger mb-3"></i>
-          <h5>Bono educativo</h5>
-          <p>Apoyo económico para estudios de tus beneficiarios en caso de fallecimiento.</p>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primario px-5 py-2">Cotizar</button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ===================== DIFERENCIALES ===================== -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="fw-bold text-center mb-4">Lo que hace único a Plan Vida Docente</h2>
-      <ul class="list-group list-group-flush shadow-sm">
-        <li class="list-group-item"><i class="ri-check-line text-success"></i> Cobertura desde los 14 hasta los 70 años.</li>
-        <li class="list-group-item"><i class="ri-check-line text-success"></i> Opciones adicionales: invalidez, hospitalización, enfermedades graves, auxilio funerario.</li>
-        <li class="list-group-item"><i class="ri-check-line text-success"></i> Respaldo económico rápido y confiable de SURA.</li>
-        <li class="list-group-item"><i class="ri-check-line text-success"></i> Bono educativo exclusivo para hijos beneficiarios.</li>
-      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===================== TESTIMONIOS ===================== -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Lo que dicen otros docentes</h2>
-      <blockquote class="blockquote">
-        <p>“Con este plan tengo la tranquilidad de que, pase lo que pase, mi familia estará protegida.”</p>
-        <footer class="blockquote-footer">María López, docente afiliada</footer>
-      </blockquote>
+
+<!-- ===================== SECCIÓN VIDA DOCENTE (DOS COLUMNAS) ===================== -->
+<section class="vida-docente py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-start g-4">
+
+      <!-- Columna izquierda: información -->
+      <div class="col-lg-6">
+        <div class="info-vida-docente bg-white p-4 rounded-4 shadow-sm" data-aos="fade-right">
+          <img src="../img/Sample4.webp" alt="Docente y familia" class="img-fluid rounded-4 shadow mb-4">
+          <h2 class="fw-bold mb-3 text-primario">¿Por qué adquirir el Plan Vida Docente?</h2>
+          <p class="text-muted mb-4">
+            El <strong>Plan Vida Docente</strong> está diseñado especialmente para acompañarte durante todas las etapas de tu vida profesional y familiar. 
+            Su propósito es garantizar que, ante cualquier imprevisto, tu esfuerzo y dedicación sigan protegiendo a quienes más amas.
+          </p>
+
+          <ul class="lista-beneficios">
+            <li>
+              <i class="bi bi-shield-check me-3 text-primario fs-4"></i>
+              <div>
+                <h5>Seguridad a largo plazo</h5>
+                <p>Ofrece cobertura completa frente a fallecimiento, invalidez o enfermedades graves.</p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-heart-pulse me-3 text-danger fs-4"></i>
+              <div>
+                <h5>Protección integral</h5>
+                <p>Cubre tanto al docente como a su familia, con planes flexibles que se adaptan a tus necesidades.</p>
+              </div>
+            </li>
+         
+            <li>
+              <i class="bi bi-trophy-fill me-3 text-warning fs-4"></i>
+              <div>
+                <h5>Respaldo de SURA</h5>
+                <p>Disfruta de la confianza y solidez de una compañía líder en el sector asegurador colombiano.</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#cotiza" class="btn btn-primario mt-4 px-4 py-2 rounded-pill">
+            <i class="bi bi-cart-fill me-2"></i> Adquiere tu plan ahora
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna derecha: panel -->
+      <div class="col-lg-6">
+        <div class="panel-vida bg-white p-4 rounded-4 shadow-sm" data-aos="fade-left">
+          <h2 class="fw-bold text-primario text-center mb-4">PLAN VIDA DOCENTE</h2>
+          <p class="text-muted text-center mb-4">
+            Pensando en su bienestar, <strong>SURA</strong> ofrece una completa solución para ti y los tuyos, brindando respaldo en los momentos más importantes.
+          </p>
+
+          <div class="text-center mb-4">
+            <i class="bi bi-mortarboard-fill text-primario me-3 fs-1"></i>
+            <i class="bi bi-shield-check text-secondary fs-1"></i>
+          </div>
+
+          <h4 class="fw-bold text-primario mb-3 text-center">Coberturas del Plan Vida Grupo</h4>
+
+          <div class="accordion" id="accordionCoberturas">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#vida">
+                  <i class="bi bi-heart-fill me-2 text-danger"></i> Vida
+                </button>
+              </h2>
+              <div id="vida" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  Garantiza respaldo económico para tus beneficiarios en caso de fallecimiento.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#incapacidad">
+                  <i class="bi bi-person-wheelchair me-2 text-secondary"></i> Incapacidad total y permanente
+                </button>
+              </h2>
+              <div id="incapacidad" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Cubre al docente si una enfermedad o accidente impide continuar su labor.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#muerteAcc">
+                  <i class="bi bi-exclamation-triangle-fill me-2 text-danger"></i> Muerte accidental
+                </button>
+              </h2>
+              <div id="muerteAcc" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Auxilio adicional a los beneficiarios en caso de fallecimiento por accidente.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#enfermedades">
+                  <i class="bi bi-activity me-2 text-primary"></i> Enfermedades graves (60%)
+                </button>
+              </h2>
+              <div id="enfermedades" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Indemnización equivalente al 60% del valor asegurado ante diagnóstico grave.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#funerario">
+                  <i class="bi bi-flower1 me-2 text-secondary"></i> Auxilio funerario
+                </button>
+              </h2>
+              <div id="funerario" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Apoyo económico para cubrir gastos funerarios del asegurado.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#bonoCanasta">
+                  <i class="bi bi-bag-heart-fill me-2 text-success"></i> Bono canasta y/o educativo
+                </button>
+              </h2>
+              <div id="bonoCanasta" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Ayuda económica para educación o alimentación de beneficiarios.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#adecuaciones">
+                  <i class="bi bi-house-gear-fill me-2 text-primary"></i> Bono adecuaciones del hogar
+                </button>
+              </h2>
+              <div id="adecuaciones" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Cubre gastos de adecuación del hogar en caso de incapacidad.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#repatriacion">
+                  <i class="bi bi-airplane-fill me-2 text-info"></i> Auxilio de repatriación
+                </button>
+              </h2>
+              <div id="repatriacion" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Apoyo para el traslado del cuerpo del asegurado al lugar de origen.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#maternidad">
+                  <i class="bi bi-gender-ambiguous me-2 text-danger"></i> Auxilio de maternidad/paternidad
+                </button>
+              </h2>
+              <div id="maternidad" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Beneficio económico para gastos durante nacimiento o adopción.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#rentaDiaria">
+                  <i class="bi bi-hospital-fill me-2 text-secondary"></i> Renta diaria por hospitalización
+                </button>
+              </h2>
+              <div id="rentaDiaria" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Pago diario al asegurado durante hospitalización o postquirúrgico.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#uci">
+                  <i class="bi bi-hospital me-2 text-danger"></i> Renta adicional UCI (máx. 10 días)
+                </button>
+              </h2>
+              <div id="uci" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Pago adicional diario por hospitalización en cuidados intensivos.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===================== CTA FINAL ===================== -->
-  <section class="text-center py-5 bg-danger text-white">
-    <div class="container">
-      <h3 class="mb-3">¿Listo para proteger tu futuro y el de tu familia?</h3>
-      <a href="#formulario" class="btn btn-light btn-lg">Solicita tu cotización ahora</a>
+<!-- ===================== SECCIÓN /SLASH RECLAMACIONES ===================== -->
+<section class="slash-reclamaciones py-5 text-center text-white">
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-8">
+        <h2 class="fw-bold mb-3">
+          <i class="bi bi-file-earmark-text-fill me-2"></i> ¿Necesitas realizar una reclamación?
+        </h2>
+        <p class="lead mb-4">
+          Accede fácilmente al formulario de <strong>Reclamaciones Docentes</strong> y gestiona tu solicitud de manera rápida y segura.
+        </p>
+        <a href="reclamaciones_docentes.html" class="btn btn-light btn-lg fw-bold px-4 py-2 rounded-pill">
+          <i class="bi bi-arrow-right-circle-fill me-2"></i> Ir a Reclamaciones
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="py-4 bg-dark text-white">
+<!-- ===================== ICONOS BOOTSTRAP ===================== -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<!-- FOOTER -->
+  <footer class="py-4" data-aos="fade-up">
     <div class="container d-flex flex-wrap justify-content-between">
-      <div>
-        <img src="../img/Compañias_alidas/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3" style="height:50px;">
-        <p>MILENIO LTDA ASESORES DE SEGUROS</p>
+      
+      <!-- Columna 1: Logo + descripción -->
+      <div class="col-md-4 mb-3 text-center text-md-start">
+        <img src="../img/Logos/milenio.png" alt="Milenio Seguros" class="footer-logo mb-3">
+        <h2>MILENIO LTDA ASESORES DE SEGUROS</h2>
         <p>Protegemos lo que más valoras. Nuestro compromiso es tu tranquilidad.</p>
+        <div class="social-links">
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
       </div>
-      <div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="col-md-4 mb-3">
+        <p class="fw-bold">Enlaces rápidos</p>
+        <a href="#">Inicio</a><br>
+        <a href="#">Sobre nosotros</a><br>
+        <a href="#">Servicios</a><br>
+        <a href="#">Contáctanos</a>
+      </div>
+
+      <!-- Columna 3: Contacto + Botón Google Maps -->
+      <div class="col-md-4 mb-3">
         <p class="fw-bold">Contáctanos</p>
         <p>Teléfono: +57 605 2823408</p>
         <p>Correo: contacto@milenioseguros.com</p>
         <p>Dirección: Cr17 24 - 39 Cl Nariño Sincelejo - Sucre</p>
+
+        <!-- Botón Google Maps -->
+        <div class="mt-3">
+          <a href="https://www.google.com/maps?q=Cr17+24+-+39+Cl+Nariño+Sincelejo+Sucre" 
+             target="_blank" 
+             class="btn-maps">
+            <i class="ri-map-pin-2-fill"></i> Ver ubicación en Google Maps
+          </a>
+        </div>
       </div>
     </div>
+
     <div class="text-center border-top pt-3 mt-3">
       <p class="mb-0">© 2025 Milenio Seguros. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- ===================== SCRIPTS ===================== -->
+  <!-- WhatsApp -->
+  <a href="https://wa.me/3116166922?text=Hola,%20quiero%20más%20información%20sobre%20sus%20seguros"
+     class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp">
+  </a>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
 
-<script>
-  // ===================== MENÚ HAMBURGUESA =====================
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.querySelector(".nav-links");
+    // Toggle menú hamburguesa
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-  toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active");
-    nav.classList.toggle("active");
-    nav.classList.toggle("d-flex");
-  });
-
-  // Cerrar menú al hacer clic en un enlace (en móviles)
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      toggle.classList.remove("active");
-      nav.classList.remove("active", "d-flex");
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
     });
-  });
 
-  // ===================== HEADER AL HACER SCROLL =====================
-  window.addEventListener("scroll", () => {
-    const header = document.querySelector(".site-header");
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
-
-  // ===================== ANIMACIONES AL HACER SCROLL =====================
-  const elementsToAnimate = document.querySelectorAll(
-    ".hero, .formulario, section h2, .list-group-item, .bg-danger, footer"
-  );
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
+    // Cierra menú al hacer clic en un enlace
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
     });
-  }, { threshold: 0.15 });
-
-  elementsToAnimate.forEach(el => {
-    el.classList.add("fade-element");
-    observer.observe(el);
-  });
-</script>
+  </script>
 
 </body>
 </html>
