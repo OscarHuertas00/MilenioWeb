@@ -436,75 +436,291 @@ footer a:hover { color: #dc3545; }
 }
 
 
-/* ===================== SEGURO DE VIDA ===================== */
+/* ==========================================================
+   ===================== VIDA DOCENTE =====================
+   ========================================================== */
 
-/* HERO VIDA */
+/* ==========================================================
+   HERO
+   ========================================================== */
 .vida-hero {
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url('../img/Sample7.webp') center/cover no-repeat;
-  min-height: 55vh;
+  background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(200, 16, 46, 0.85)),
+    url('../img/Sample7.webp') center/cover no-repeat;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
-  padding: 2rem 1rem;
-}
-.vida-hero h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-.vida-hero p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto 1rem;
-  line-height: 1.6;
+  padding: 3rem 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
-/* BENEFICIOS VIDA */
-.vida-beneficios {
-  background: #fff;
+.vida-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.15), transparent 70%);
+  opacity: 0.4;
 }
-.beneficio-card {
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 25px;
-  transition: transform 0.3s, box-shadow 0.3s;
+
+.vida-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
 }
-.beneficio-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+
+.vida-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #f2f2f2;
 }
-.beneficio-card i {
+
+/* ==========================================================
+   DIVISIONES
+   ========================================================== */
+.division-roja {
+  height: 8px;
+  background: linear-gradient(to right, #c8102e, #ff4d4d, #c8102e);
+}
+
+.division-gris {
+  height: 8px;
+  background: linear-gradient(to right, #dcdcdc, #f5f5f5, #dcdcdc);
+}
+
+.division-oscura {
+  height: 8px;
+  background: linear-gradient(to right, #111, #c8102e, #111);
+}
+
+/* ==========================================================
+   INTRODUCCIÓN
+   ========================================================== */
+.vida-intro {
+  background: linear-gradient(145deg, #ffffff 0%, #f5f6f8 50%, #e8eaed 100%);
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.vida-intro h2 {
+  color: #c8102e;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.vida-intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+/* ==========================================================
+   CASOS REALES
+   ========================================================== */
+.vida-casos {
+  background: linear-gradient(120deg, #f9fafc, #ffffff, #f4f6f8);
+  padding: 5rem 0;
+}
+
+.vida-casos .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.vida-casos .texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.vida-casos .texto h2 {
+  color: #c8102e;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.vida-casos .texto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vida-casos .texto li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.vida-casos .texto i {
+  color: #c8102e;
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.vida-casos img {
+  flex: 1;
+  max-width: 480px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vida-casos img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================
+   COBERTURAS
+   ========================================================== */
+.vida-coberturas {
+  background: linear-gradient(180deg, #fff 0%, #f3f4f6 50%, #e9ebee 100%);
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.vida-coberturas h2 {
+  color: #c8102e;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.vida-coberturas p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.05rem;
+}
+
+.vida-coberturas .card {
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #fff, #f9f9f9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.vida-coberturas .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #fff, #f1f1f1);
+}
+
+.vida-coberturas i {
+  font-size: 2.8rem;
   color: #c8102e;
   margin-bottom: 15px;
 }
-.beneficio-card h5 {
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.beneficio-card p {
-  color: #555;
-  font-size: 0.95rem;
+
+/* ==========================================================
+   FORMULARIO DE CONTACTO
+   ========================================================== */
+.vida-form {
+  background: linear-gradient(160deg, #eef0f3, #ffffff 50%, #f4f6f9);
+  padding: 5rem 0;
 }
 
-/* ALIADOS VIDA */
-.aliados-vida img {
-  filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
+.vida-form h2 {
+  color: #c8102e;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.2rem;
 }
-.aliados-vida img:hover {
-  filter: none;
+
+.vida-form p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.vida-form form {
+  background: linear-gradient(145deg, #ffffff, #f8f8f8);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.vida-form form:hover {
+  transform: scale(1.02);
+}
+
+.vida-form .btn {
+  background-color: #c8102e;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.vida-form .btn:hover {
+  background-color: #a40d25;
   transform: scale(1.05);
 }
 
-/* RESPONSIVE */
+/* ==========================================================
+   SECCIÓN FINAL
+   ========================================================== */
+.vida-final {
+  background: linear-gradient(180deg, #c8102e, #440000);
+  color: #fff;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.vida-final h2 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.vida-final p {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  color: #f2f2f2;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
 @media (max-width: 992px) {
-  .info-form-vida .row {
+  .vida-hero {
+    min-height: 50vh;
+    padding: 3rem 1rem;
+  }
+
+  .vida-casos .contenedor {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .vida-casos .texto {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .vida-casos img {
+    max-width: 100%;
+  }
+
+  .vida-form form {
+    padding: 1.5rem;
   }
 }
+
+
+
 /* ===================== HERO HOGAR ===================== */
 .hogar-hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),

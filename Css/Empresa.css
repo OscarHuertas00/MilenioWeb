@@ -775,3 +775,272 @@ footer a:hover { color: #dc3545; }
   }
 }
 
+/* ===================== RESPONSABILIDAD CIVIL ===================== */
+/* ===================== RESPONSABILIDAD CIVIL ===================== */
+
+/* ===== HERO ===== */
+.rc-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../img/Sample2.webp') center/cover no-repeat;
+  height: 50vh; /* Más pequeño */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.rc-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.rc-hero p {
+  color: #f2f2f2;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== INTRO ===== */
+.rc-intro {
+  background: #fff;
+  color: #333;
+}
+
+.rc-intro h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #c8102e;
+}
+
+.rc-intro p {
+  font-size: 1.05rem;
+  max-width: 850px;
+  margin: 10px auto;
+  line-height: 1.7;
+}
+
+/* ===== TIPOS DE COBERTURA ===== */
+.rc-tipos {
+  background: linear-gradient(135deg, #c8102e, #6a0c1e);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.rc-tipos h2 {
+  font-weight: 700;
+}
+
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tipo-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tipo-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tipo-card i {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.tipo-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* ===== CASOS REALES ===== */
+.rc-casos {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.rc-casos h2 {
+  color: #c8102e;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.rc-casos .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.rc-casos .texto {
+  flex: 1 1 45%;
+}
+
+.rc-casos .imagen {
+  flex: 1 1 45%;
+}
+
+.rc-casos ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.rc-casos li {
+  margin-bottom: 10px;
+}
+
+.rc-casos img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== BENEFICIOS ===== */
+.rc-benefits {
+  background: #fff;
+}
+
+.rc-benefits h2 {
+  color: #c8102e;
+  font-weight: 700;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.benefit-item {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-item i {
+  font-size: 2.5rem;
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+/* ===== SECTORES ===== */
+.rc-sectores {
+  background: linear-gradient(135deg, #111, #222);
+}
+
+.rc-sectores h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sectores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.sectores-grid div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 15px;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sectores-grid div:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.sectores-grid i {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sectores-grid h5 {
+  color: #f2f2f2;
+}
+
+/* ===== FAQ ===== */
+.rc-faq h2 {
+  color: #c8102e;
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #c8102e;
+  color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* ===== CTA FINAL ===== */
+.rc-cta {
+  background: linear-gradient(135deg, #c8102e, #6a0c1e);
+}
+
+.rc-cta h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.rc-cta p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .rc-casos .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rc-casos .imagen {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rc-hero {
+    height: 40vh;
+    padding: 30px 15px;
+  }
+
+  .rc-hero h1 {
+    font-size: 2rem;
+  }
+
+  .rc-hero p {
+    font-size: 0.95rem;
+  }
+}
