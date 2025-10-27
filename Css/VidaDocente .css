@@ -316,6 +316,149 @@ footer a:hover { color: #dc3545; }
   }
 }
 
+/* ===================== SECCIÓN VIDA DOCENTE ===================== */
+.vida-docente {
+  background: #fff;
+  color: #333;
+  padding: 90px 0;
+}
+
+/* ======= Paneles (columna izquierda y derecha) ======= */
+.vida-docente .info-vida-docente,
+.vida-docente .panel-vida {
+  background: #f9f9f9;
+  color: #333;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 2.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.vida-docente .info-vida-docente:hover,
+.vida-docente .panel-vida:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ======= Ajuste de columnas (más anchas) ======= */
+.vida-docente .col-lg-6:first-child {
+  flex: 0 0 90%;
+  max-width: 60%;
+}
+
+.vida-docente .col-lg-6:last-child {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+/* ======= Títulos y texto ======= */
+.vida-docente h2 {
+  font-size: 2.3rem;
+  color: #111;
+}
+
+.vida-docente p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ======= Imagen ======= */
+.info-vida-docente img {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* ======= Lista de beneficios ======= */
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-beneficios li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.lista-beneficios i {
+  font-size: 1.8rem;
+  color: #c8102e;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.lista-beneficios h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.lista-beneficios p {
+  margin: 2px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ======= Botón ======= */
+.info-vida-docente .btn-primario {
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s;
+  padding: 12px 30px;
+  border: none;
+}
+
+.info-vida-docente .btn-primario:hover {
+  background: #a50d25;
+}
+
+/* ======= Accordion ======= */
+.accordion-button {
+  font-weight: 600;
+  color: #111;
+  background: #f1f1f1;
+  border-radius: 10px !important;
+  margin-bottom: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #c8102e;
+  color: #fff;
+}
+
+.accordion-body {
+  background: #fff;
+  border-radius: 10px;
+  color: #555;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 992px) {
+  .vida-docente {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .vida-docente .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .lista-beneficios li {
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+
 /* ===================== INFO VIDA DOCENTE ===================== */
 .info-vida-docente {
   background: #f8f9fa;
@@ -397,6 +540,8 @@ footer a:hover { color: #dc3545; }
     text-align: left;
   }
 }
+
+/* ===================== SLASH RECLAMACIONES ===================== */
 .slash-reclamaciones {
   background: linear-gradient(90deg, #c8102e 0%, #9b0e25 100%);
   color: #fff;

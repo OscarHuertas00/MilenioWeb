@@ -112,51 +112,57 @@ header {
 }
 
 
-/* ===================== HERO ===================== */
+/* ===================== HERO VEHÍCULO ===================== */
 .service-hero {
-  background: url('../img/Sample5.webp') center/cover no-repeat;
-  padding: 120px 20px;
-  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+              url('../../Milenio/img/sample8.webp') center/cover no-repeat;
+  height: 50vh; /* un poco más pequeño */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  border-bottom: 4px solid #c8102e;
+  color: #fff;
+  padding: 0 20px;
 }
 
-.service-hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
 
+/* ===================== BENEFICIOS AUTOS ===================== */
+.beneficios {
+  background-color: #f9fafb;
 }
 
-.service-hero h1,
-.service-hero p,
-.service-hero a {
-  position: relative;
-  z-index: 2;
+.beneficio-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
 }
 
-.service-hero h1 {
-  font-size: 2.5rem;
+.beneficio-card i {
+  font-size: 42px;
+  color: var(--color-primario, #c8102e);
+  margin-bottom: 15px;
+}
+
+.beneficio-card h5 {
+  font-weight: 600;
+  color: #111;
   margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-.service-hero p {
-  font-size: 1.1rem;
-  max-width: 750px;
-  margin: 0 auto 25px;
-  line-height: 1.5;
+.beneficio-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-/* Ajustes responsivos para hero */
-@media (max-width: 992px) {
-  .service-hero { padding: 90px 20px; }
-  .service-hero h1 { font-size: 2rem; }
-  .service-hero p { font-size: 1rem; }
+.beneficio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -192,7 +198,6 @@ header {
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #fff;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
@@ -219,10 +224,6 @@ header {
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
-.btn-soat i {
-  font-size: 1.5rem;
-}
-
 .btn-soat:hover {
   background: #c8102e;
   color: #fff;
@@ -233,9 +234,10 @@ header {
 /* Ajustes responsivos para SOAT */
 @media (max-width: 768px) {
   .soat-section { padding: 100px 20px; background-attachment: scroll; }
-  .soat-section h1 { font-size: 1.8rem; }
+  .soat-section h1 { font-size: 2rem; }
   .btn-soat { padding: 12px 28px; font-size: 1rem; }
 }
+
 
 /* ===================== FOOTER ===================== */
 footer {
@@ -286,112 +288,153 @@ footer a:hover { color: #dc3545; }
   from { opacity: 0; transform: translateX(30px); }
   to { opacity: 1; transform: translateX(0); }
 }
-/* ===================== SEGURO DE SALUD ===================== */
 
-/* HERO */
+/* ===================== SEGURO DE SALUD ===================== */
+/* ===================== HERO SEGURO DE SALUD ===================== */
 .salud-hero {
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
               url('../img/Sample2.webp') center/cover no-repeat;
-  min-height: 55vh; /* Más pequeño */
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  margin: 0;
+  padding: 0;
   color: #fff;
-  padding: 2rem 1rem;
+  text-align: center;
 }
+
 .salud-hero h1 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 1rem;
 }
+
 .salud-hero p {
   font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 1rem;
-  line-height: 1.6;
-}
-
-/* SERVICIOS DE SALUD */
-.servicios-salud {
-  background: #fff;
-  padding: 4rem 0;
-}
-.servicios-salud h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #222;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.salud-card {
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.salud-card img {
-  height: 150px; /* Más pequeñas */
-  object-fit: contain;
-  padding: 1rem;
-}
-.salud-card h5 {
-  color: #c8102e;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-.salud-card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-.salud-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
-/* CTA FINAL */
-.cta-salud {
-  background: linear-gradient(135deg, #c8102e, #e6223a);
-  text-align: center;
-  padding: 3rem 1rem;
-  color: #fff;
-}
-.cta-salud h2 {
-  font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 1rem;
 }
-.cta-salud p {
-  font-size: 1.05rem;
-  opacity: 0.9;
-}
-.cta-salud .btn {
-  font-weight: 600;
-  border-radius: 50px;
-  padding: 0.8rem 2rem;
+
+.salud-hero .btn {
   background: #fff;
   color: #c8102e;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  padding: 0.8rem 2rem;
   border: none;
-  transition: background 0.3s ease, color 0.3s ease;
 }
-.cta-salud .btn:hover {
+
+.salud-hero .btn:hover {
   background: #c8102e;
   color: #fff;
 }
 
-/* RESPONSIVE */
+/* ===================== INFO SALUD ===================== */
+.salud-info i {
+  flex-shrink: 0;
+}
+
+/* ===================== SLASH INTERMEDIO ===================== */
+.slash-milenio {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+              url('../img/Sample7.webp') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.slash-milenio h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.slash-milenio p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===================== FORMULARIO SALUD ===================== */
+.info-form-salud {
+  background: #fff;
+  margin: 0;
+  padding: 80px 20px 40px 20px;
+  text-align: center;
+}
+
+.formulario-estandar {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-estandar h2 {
+  font-weight: 700;
+  color: #c8102e;
+  margin-bottom: 10px;
+}
+
+.formulario-estandar p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.formulario-estandar .btn {
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 35px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.formulario-estandar .btn:hover {
+  background: #a50c25;
+}
+
+/* Frase debajo del formulario */
+.frase-form {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 992px) {
-  .info-form-salud .container {
+  .salud-hero {
+    height: 50vh;
+    padding: 2rem 1rem;
+  }
+
+  .coberturas-beneficios {
     flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
   }
-  .info-salud, .cotizacion-salud {
-    flex: 1 1 100%;
+
+  .coberturas,
+  .beneficios {
+    max-width: 100%;
   }
-  .salud-hero h1 {
-    font-size: 2rem;
+
+  .formulario-estandar {
+    padding: 30px;
+  }
+
+  .slash-milenio {
+    padding: 4rem 1rem;
   }
 }
+
 
 /* ===================== SEGURO DE VIDA ===================== */
 
